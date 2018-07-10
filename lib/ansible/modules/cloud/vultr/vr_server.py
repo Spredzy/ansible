@@ -33,6 +33,10 @@ options:
     description:
       - The operating system.
       - Required if the server does not yet exist.
+  iso:
+    description:
+      - The ISO to boot the server from.
+      - If set, the C(os) parameter will be set to 'Custom'.
   firewall_group:
     description:
       - The firewall group to assign this server to.
@@ -255,6 +259,11 @@ vultr_server:
       returned: success
       type: string
       sample: "CentOS 6 x64"
+    iso:
+      description: ISO used for the server. If this parameter is specified, os will default to Custom.
+      returned: success
+      type: string
+      sample: "CentOS 6"
     firewall_group:
       description: Firewall group the server is assinged to
       returned: success and available
@@ -350,6 +359,7 @@ class AnsibleVultrServer(Vultr):
             'network_v4': dict(key='v4_network'),
             'gateway_v4': dict(key='v4_gateway'),
             'os': dict(),
+            'iso': dict(),
             'pending_charges': dict(convert_to='float'),
             'power_status': dict(),
             'ram': dict(),
@@ -373,11 +383,20 @@ class AnsibleVultrServer(Vultr):
             resource='startupscript',
         )
 
-    def get_os(self):
+    def get_os(self, value=None):
         return self.query_resource_by_key(
             key='name',
-            value=self.module.params.get('os'),
+            value=value if value else self.module.params.get('os'),
             resource='os',
+            use_cache=True
+        )
+
+    def get_iso(self):
+        return self.query_resource_by_key(
+            key='name',
+            value=self.module.params.get('iso'),
+            resource='iso',
+            query_by='list_public',
             use_cache=True
         )
 
@@ -451,6 +470,10 @@ class AnsibleVultrServer(Vultr):
                         )
                         self.server['os'] = os.get('name')
 
+                        # NOTE(spredzy): We cant fill 'iso' in the returned value as
+                        #                it is not returned by the API itself. There is
+                        #                currently an open ticket: QAN-98VCT
+
                         fwg_id = server_data.get('FIREWALLGROUPID')
                         fw = self.query_resource_by_key(
                             key='FIREWALLGROUPID',
@@ -471,8 +494,8 @@ class AnsibleVultrServer(Vultr):
         return server
 
     def _create_server(self, server=None):
+        # TODO(sprezy): How to handle os
         required_params = [
-            'os',
             'plan',
             'region',
         ]
@@ -497,6 +520,10 @@ class AnsibleVultrServer(Vultr):
                 'user_data': self.get_user_data(),
                 'SCRIPTID': self.get_startup_script().get('SCRIPTID'),
             }
+            if self.module.params.get('iso'):
+                data['OSID'] = self.get_os('Custom').get('OSID')
+                data['ISOID'] = self.get_iso().get('ISOID')
+
             self.api_query(
                 path="/v1/server/create",
                 method="POST",
@@ -830,6 +857,7 @@ def main():
         name=dict(required=True, aliases=['label']),
         hostname=dict(),
         os=dict(),
+        iso=dict(),
         plan=dict(),
         force=dict(type='bool', default=False),
         notify_activate=dict(type='bool', default=False),
