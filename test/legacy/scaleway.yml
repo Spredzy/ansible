@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: no
+  connection: local
+  environment:
+    SCW_API_KEY: "{{ lookup('env', 'SCW_API_KEY')  }}"
+  roles:
+    - { role: scaleway_security_group_facts, tags: test_scaleway_security_group_facts }
