@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-04 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../rst/index.rst:23
+msgid "Installation, Upgrade & Configuration"
+msgstr ""
+
+#: ../../rst/index.rst:30
+msgid "Using Ansible"
+msgstr ""
+
+#: ../../rst/index.rst:36
+msgid "Contributing to Ansible"
+msgstr ""
+
+#: ../../rst/index.rst:42
+msgid "Extending Ansible"
+msgstr ""
+
+#: ../../rst/index.rst:48
+msgid "Common Ansible Scenarios"
+msgstr ""
+
+#: ../../rst/index.rst:57
+msgid "Network Automation"
+msgstr ""
+
+#: ../../rst/index.rst:65
+msgid "Ansible Galaxy"
+msgstr ""
+
+#: ../../rst/index.rst:73
+msgid "Reference & Appendices"
+msgstr ""
+
+#: ../../rst/index.rst:97
+msgid "Release Notes"
+msgstr ""
+
+#: ../../rst/index.rst:101
+msgid "Roadmaps"
+msgstr ""
+
+#: ../../rst/index.rst:4
+msgid "Ansible Documentation"
+msgstr ""
+
+#: ../../rst/index.rst:7
+msgid "About Ansible"
+msgstr ""
+
+#: ../../rst/index.rst:9
+msgid "Ansible is an IT automation tool.  It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates."
+msgstr ""
+
+#: ../../rst/index.rst:11
+msgid "Ansible's main goals are simplicity and ease-of-use. It also has a strong focus on security and reliability, featuring a minimum of moving parts, usage of OpenSSH for transport (with other transports and pull modes as alternatives), and a language that is designed around auditability by humans--even those not familiar with the program."
+msgstr ""
+
+#: ../../rst/index.rst:13
+msgid "We believe simplicity is relevant to all sizes of environments, so we design for busy users of all types: developers, sysadmins, release engineers, IT managers, and everyone in between. Ansible is appropriate for managing all environments, from small setups with a handful of instances to enterprise environments with many thousands of instances."
+msgstr ""
+
+#: ../../rst/index.rst:15
+msgid "You can learn more at `AnsibleFest <https://www.ansible.com/ansiblefest>`_, the annual event for all Ansible contributors, users, and customers hosted by Red Hat. AnsibleFest is the place to connect with others, learn new skills, and find a new friend to automate with."
+msgstr ""
+
+#: ../../rst/index.rst:17
+msgid "Ansible manages machines in an agent-less manner. There is never a question of how to upgrade remote daemons or the problem of not being able to manage systems because daemons are uninstalled.  Because OpenSSH is one of the most peer-reviewed open source components, security exposure is greatly reduced. Ansible is decentralized--it relies on your existing OS credentials to control access to remote machines. If needed, Ansible can easily connect with Kerberos, LDAP, and other centralized authentication management systems."
+msgstr ""
+
+#: ../../rst/index.rst:19
+msgid "This documentation covers the version of Ansible noted in the upper left corner of this page. We maintain multiple versions of Ansible and of the documentation, so please be sure you are using the version of the documentation that covers the version of Ansible you're using. For recent features, we note the version of Ansible where the feature was added."
+msgstr ""
+
+#: ../../rst/index.rst:21
+msgid "Ansible releases a new major release of Ansible approximately three to four times per year. The core application evolves somewhat conservatively, valuing simplicity in language design and setup. Contributors develop and change modules and plugins, hosted in collections since version 2.10, much more quickly."
+msgstr ""
+

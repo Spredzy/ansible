@@ -1,0 +1,1063 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-04 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../rst/cli/ansible.rst:7
+msgid "ansible"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:10
+msgid ":strong:`Define and run a single task 'playbook' against a set of hosts`"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:21 ../../rst/cli/ansible-console.rst:21
+#: ../../rst/cli/ansible-doc.rst:21 ../../rst/cli/ansible-galaxy.rst:21
+#: ../../rst/cli/ansible-inventory.rst:21 ../../rst/cli/ansible-playbook.rst:21
+#: ../../rst/cli/ansible-pull.rst:21 ../../rst/cli/ansible-vault.rst:21
+#: ../../rst/cli/ansible.rst:21
+msgid "Synopsis"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:30 ../../rst/cli/ansible-console.rst:44
+#: ../../rst/cli/ansible-doc.rst:35 ../../rst/cli/ansible-galaxy.rst:30
+#: ../../rst/cli/ansible-inventory.rst:36 ../../rst/cli/ansible-playbook.rst:45
+#: ../../rst/cli/ansible-pull.rst:44 ../../rst/cli/ansible-vault.rst:32
+#: ../../rst/cli/ansible.rst:43
+msgid "Description"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:46
+msgid "is an extra-simple tool/framework/API for doing 'remote things'. this command allows you to define and run a single task 'playbook' against a set of hosts"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:37 ../../rst/cli/ansible-console.rst:51
+#: ../../rst/cli/ansible-doc.rst:45 ../../rst/cli/ansible-galaxy.rst:37
+#: ../../rst/cli/ansible-inventory.rst:43 ../../rst/cli/ansible-playbook.rst:53
+#: ../../rst/cli/ansible-pull.rst:59 ../../rst/cli/ansible-vault.rst:46
+#: ../../rst/cli/ansible.rst:51
+msgid "Common Options"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:58 ../../rst/cli/ansible-inventory.rst:50
+#: ../../rst/cli/ansible-playbook.rst:60 ../../rst/cli/ansible-pull.rst:71
+#: ../../rst/cli/ansible-vault.rst:89 ../../rst/cli/ansible-vault.rst:123
+#: ../../rst/cli/ansible-vault.rst:157 ../../rst/cli/ansible-vault.rst:191
+#: ../../rst/cli/ansible-vault.rst:221 ../../rst/cli/ansible-vault.rst:259
+#: ../../rst/cli/ansible-vault.rst:309 ../../rst/cli/ansible.rst:58
+msgid "ask for vault password"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:63 ../../rst/cli/ansible-playbook.rst:65
+#: ../../rst/cli/ansible.rst:63
+msgid "privilege escalation method to use (default=sudo), use `ansible-doc -t become -l` to list valid choices."
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:68 ../../rst/cli/ansible-playbook.rst:70
+#: ../../rst/cli/ansible.rst:68
+msgid "run operations as this user (default=root)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:73 ../../rst/cli/ansible-playbook.rst:85
+#: ../../rst/cli/ansible-pull.rst:96 ../../rst/cli/ansible.rst:73
+msgid "outputs a list of matching hosts; does not execute anything else"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:78 ../../rst/cli/ansible-doc.rst:57
+#: ../../rst/cli/ansible-inventory.rst:85 ../../rst/cli/ansible.rst:78
+msgid "Since this tool does not use playbooks, use this as a substitute playbook directory.This sets the relative path for many features including roles/ group_vars/ etc."
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:83 ../../rst/cli/ansible-playbook.rst:100
+#: ../../rst/cli/ansible-pull.rst:101 ../../rst/cli/ansible.rst:83
+msgid "use this file to authenticate the connection"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:88 ../../rst/cli/ansible-playbook.rst:105
+#: ../../rst/cli/ansible-pull.rst:111 ../../rst/cli/ansible.rst:88
+msgid "specify extra arguments to pass to scp only (e.g. -l)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:93 ../../rst/cli/ansible-playbook.rst:110
+#: ../../rst/cli/ansible-pull.rst:116 ../../rst/cli/ansible.rst:93
+msgid "specify extra arguments to pass to sftp only (e.g. -f, -l)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:98 ../../rst/cli/ansible-playbook.rst:120
+#: ../../rst/cli/ansible-pull.rst:126 ../../rst/cli/ansible.rst:98
+msgid "specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:103 ../../rst/cli/ansible-playbook.rst:125
+#: ../../rst/cli/ansible-pull.rst:131 ../../rst/cli/ansible.rst:103
+msgid "specify extra arguments to pass to ssh only (e.g. -R)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:113 ../../rst/cli/ansible-playbook.rst:140
+#: ../../rst/cli/ansible.rst:108
+msgid "perform a syntax check on the playbook, but do not execute it"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:118 ../../rst/cli/ansible.rst:113
+msgid "set task timeout limit in seconds, must be positive integer."
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:123
+#: ../../rst/cli/ansible-inventory.rst:100
+#: ../../rst/cli/ansible-playbook.rst:145 ../../rst/cli/ansible-pull.rst:141
+#: ../../rst/cli/ansible-vault.rst:97 ../../rst/cli/ansible-vault.rst:131
+#: ../../rst/cli/ansible-vault.rst:165 ../../rst/cli/ansible-vault.rst:195
+#: ../../rst/cli/ansible-vault.rst:233 ../../rst/cli/ansible-vault.rst:275
+#: ../../rst/cli/ansible-vault.rst:325 ../../rst/cli/ansible.rst:118
+msgid "the vault identity to use"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:128
+#: ../../rst/cli/ansible-inventory.rst:105
+#: ../../rst/cli/ansible-playbook.rst:150 ../../rst/cli/ansible-pull.rst:146
+#: ../../rst/cli/ansible-vault.rst:101 ../../rst/cli/ansible-vault.rst:135
+#: ../../rst/cli/ansible-vault.rst:169 ../../rst/cli/ansible-vault.rst:199
+#: ../../rst/cli/ansible-vault.rst:237 ../../rst/cli/ansible-vault.rst:279
+#: ../../rst/cli/ansible-vault.rst:329 ../../rst/cli/ansible.rst:123
+msgid "vault password file"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:44 ../../rst/cli/ansible-console.rst:133
+#: ../../rst/cli/ansible-doc.rst:62 ../../rst/cli/ansible-galaxy.rst:44
+#: ../../rst/cli/ansible-inventory.rst:110
+#: ../../rst/cli/ansible-playbook.rst:155 ../../rst/cli/ansible-pull.rst:156
+#: ../../rst/cli/ansible-vault.rst:53 ../../rst/cli/ansible.rst:128
+msgid "show program's version number, config file location, configured module search path, module location, executable location and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:133
+msgid "run asynchronously, failing after X seconds (default=N/A)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:138 ../../rst/cli/ansible-playbook.rst:160
+#: ../../rst/cli/ansible-pull.rst:76 ../../rst/cli/ansible.rst:138
+msgid "don't make any changes; instead, try to predict some of the changes that may occur"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:143 ../../rst/cli/ansible-playbook.rst:165
+#: ../../rst/cli/ansible-pull.rst:86 ../../rst/cli/ansible.rst:143
+msgid "when changing (small) files and templates, show the differences in those files; works great with --check"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:148 ../../rst/cli/ansible-playbook.rst:170
+#: ../../rst/cli/ansible-pull.rst:166 ../../rst/cli/ansible.rst:148
+msgid "ask for privilege escalation password"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:153 ../../rst/cli/ansible-doc.rst:72
+#: ../../rst/cli/ansible-playbook.rst:175 ../../rst/cli/ansible-pull.rst:171
+#: ../../rst/cli/ansible.rst:153
+msgid "prepend colon-separated path(s) to module library (default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:158
+msgid "set the poll interval if using -B (default=15)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:158 ../../rst/cli/ansible-playbook.rst:180
+#: ../../rst/cli/ansible-pull.rst:176 ../../rst/cli/ansible.rst:163
+msgid "override the connection timeout in seconds (default=10)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:168
+msgid "module arguments"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:163 ../../rst/cli/ansible-playbook.rst:185
+#: ../../rst/cli/ansible.rst:173
+msgid "run operations with become (does not imply password prompting)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:168 ../../rst/cli/ansible-playbook.rst:190
+#: ../../rst/cli/ansible-pull.rst:186 ../../rst/cli/ansible.rst:178
+msgid "connection type to use (default=smart)"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:173
+#: ../../rst/cli/ansible-inventory.rst:115
+#: ../../rst/cli/ansible-playbook.rst:195 ../../rst/cli/ansible-pull.rst:196
+#: ../../rst/cli/ansible.rst:183
+msgid "set additional variables as key=value or YAML/JSON, if filename prepend with @"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:178 ../../rst/cli/ansible-playbook.rst:200
+#: ../../rst/cli/ansible.rst:188
+msgid "specify number of parallel processes to use (default=5)"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:49 ../../rst/cli/ansible-console.rst:183
+#: ../../rst/cli/ansible-doc.rst:82 ../../rst/cli/ansible-galaxy.rst:49
+#: ../../rst/cli/ansible-inventory.rst:120
+#: ../../rst/cli/ansible-playbook.rst:205 ../../rst/cli/ansible-pull.rst:206
+#: ../../rst/cli/ansible-vault.rst:58 ../../rst/cli/ansible.rst:193
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:188
+#: ../../rst/cli/ansible-inventory.rst:125
+#: ../../rst/cli/ansible-playbook.rst:210 ../../rst/cli/ansible-pull.rst:211
+#: ../../rst/cli/ansible.rst:198
+msgid "specify inventory host path or comma separated host list. --inventory-file is deprecated"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:193 ../../rst/cli/ansible-playbook.rst:215
+#: ../../rst/cli/ansible-pull.rst:216 ../../rst/cli/ansible.rst:203
+msgid "ask for connection password"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:198 ../../rst/cli/ansible-playbook.rst:220
+#: ../../rst/cli/ansible-pull.rst:221 ../../rst/cli/ansible.rst:208
+msgid "further limit selected hosts to an additional pattern"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:213
+msgid "module name to execute (default=command)"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:218
+msgid "condense output"
+msgstr ""
+
+#: ../../rst/cli/ansible.rst:223
+msgid "log output to this directory"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:203 ../../rst/cli/ansible-playbook.rst:230
+#: ../../rst/cli/ansible-pull.rst:246 ../../rst/cli/ansible.rst:228
+msgid "connect as this user (default=None)"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:54 ../../rst/cli/ansible-console.rst:208
+#: ../../rst/cli/ansible-doc.rst:112 ../../rst/cli/ansible-galaxy.rst:54
+#: ../../rst/cli/ansible-inventory.rst:135
+#: ../../rst/cli/ansible-playbook.rst:235 ../../rst/cli/ansible-pull.rst:251
+#: ../../rst/cli/ansible-vault.rst:63 ../../rst/cli/ansible.rst:233
+msgid "verbose mode (-vvv for more, -vvvv to enable connection debugging)"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:139 ../../rst/cli/ansible-console.rst:217
+#: ../../rst/cli/ansible-doc.rst:121 ../../rst/cli/ansible-galaxy.rst:781
+#: ../../rst/cli/ansible-inventory.rst:149
+#: ../../rst/cli/ansible-playbook.rst:244 ../../rst/cli/ansible-pull.rst:260
+#: ../../rst/cli/ansible-vault.rst:340 ../../rst/cli/ansible.rst:242
+msgid "Environment"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:141 ../../rst/cli/ansible-console.rst:219
+#: ../../rst/cli/ansible-doc.rst:123 ../../rst/cli/ansible-galaxy.rst:783
+#: ../../rst/cli/ansible-inventory.rst:151
+#: ../../rst/cli/ansible-playbook.rst:246 ../../rst/cli/ansible-pull.rst:262
+#: ../../rst/cli/ansible-vault.rst:342 ../../rst/cli/ansible.rst:244
+msgid "The following environment variables may be specified."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:145 ../../rst/cli/ansible-console.rst:223
+#: ../../rst/cli/ansible-doc.rst:127 ../../rst/cli/ansible-galaxy.rst:787
+#: ../../rst/cli/ansible-inventory.rst:155
+#: ../../rst/cli/ansible-playbook.rst:250 ../../rst/cli/ansible-pull.rst:266
+#: ../../rst/cli/ansible-vault.rst:346 ../../rst/cli/ansible.rst:248
+msgid ":envvar:`ANSIBLE_CONFIG` -- Override the default ansible config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:147 ../../rst/cli/ansible-console.rst:225
+#: ../../rst/cli/ansible-doc.rst:129 ../../rst/cli/ansible-galaxy.rst:789
+#: ../../rst/cli/ansible-inventory.rst:157
+#: ../../rst/cli/ansible-playbook.rst:252 ../../rst/cli/ansible-pull.rst:268
+#: ../../rst/cli/ansible-vault.rst:348 ../../rst/cli/ansible.rst:250
+msgid "Many more are available for most options in ansible.cfg"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:151 ../../rst/cli/ansible-console.rst:229
+#: ../../rst/cli/ansible-doc.rst:133 ../../rst/cli/ansible-galaxy.rst:793
+#: ../../rst/cli/ansible-inventory.rst:161
+#: ../../rst/cli/ansible-playbook.rst:256 ../../rst/cli/ansible-pull.rst:272
+#: ../../rst/cli/ansible-vault.rst:352 ../../rst/cli/ansible.rst:254
+msgid "Files"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:154 ../../rst/cli/ansible-console.rst:232
+#: ../../rst/cli/ansible-doc.rst:136 ../../rst/cli/ansible-galaxy.rst:796
+#: ../../rst/cli/ansible-inventory.rst:164
+#: ../../rst/cli/ansible-playbook.rst:259 ../../rst/cli/ansible-pull.rst:275
+#: ../../rst/cli/ansible-vault.rst:355 ../../rst/cli/ansible.rst:257
+msgid ":file:`/etc/ansible/ansible.cfg` -- Config file, used if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:156 ../../rst/cli/ansible-console.rst:234
+#: ../../rst/cli/ansible-doc.rst:138 ../../rst/cli/ansible-galaxy.rst:798
+#: ../../rst/cli/ansible-inventory.rst:166
+#: ../../rst/cli/ansible-playbook.rst:261 ../../rst/cli/ansible-pull.rst:277
+#: ../../rst/cli/ansible-vault.rst:357 ../../rst/cli/ansible.rst:259
+msgid ":file:`~/.ansible.cfg` -- User config file, overrides the default config if present"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:159 ../../rst/cli/ansible-console.rst:237
+#: ../../rst/cli/ansible-doc.rst:141 ../../rst/cli/ansible-galaxy.rst:801
+#: ../../rst/cli/ansible-inventory.rst:169
+#: ../../rst/cli/ansible-playbook.rst:264 ../../rst/cli/ansible-pull.rst:280
+#: ../../rst/cli/ansible-vault.rst:360 ../../rst/cli/ansible.rst:262
+msgid "Author"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:161 ../../rst/cli/ansible-console.rst:239
+#: ../../rst/cli/ansible-doc.rst:143 ../../rst/cli/ansible-galaxy.rst:803
+#: ../../rst/cli/ansible-inventory.rst:171
+#: ../../rst/cli/ansible-playbook.rst:266 ../../rst/cli/ansible-pull.rst:282
+#: ../../rst/cli/ansible-vault.rst:362 ../../rst/cli/ansible.rst:264
+msgid "Ansible was originally written by Michael DeHaan."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:163 ../../rst/cli/ansible-console.rst:241
+#: ../../rst/cli/ansible-doc.rst:145 ../../rst/cli/ansible-galaxy.rst:805
+#: ../../rst/cli/ansible-inventory.rst:173
+#: ../../rst/cli/ansible-playbook.rst:268 ../../rst/cli/ansible-pull.rst:284
+#: ../../rst/cli/ansible-vault.rst:364 ../../rst/cli/ansible.rst:266
+msgid "See the `AUTHORS` file for a complete list of contributors."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:167 ../../rst/cli/ansible-console.rst:245
+#: ../../rst/cli/ansible-doc.rst:149 ../../rst/cli/ansible-galaxy.rst:809
+#: ../../rst/cli/ansible-inventory.rst:177
+#: ../../rst/cli/ansible-playbook.rst:272 ../../rst/cli/ansible-pull.rst:288
+#: ../../rst/cli/ansible-vault.rst:368 ../../rst/cli/ansible.rst:270
+msgid "License"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:169 ../../rst/cli/ansible-console.rst:247
+#: ../../rst/cli/ansible-doc.rst:151 ../../rst/cli/ansible-galaxy.rst:811
+#: ../../rst/cli/ansible-inventory.rst:179
+#: ../../rst/cli/ansible-playbook.rst:274 ../../rst/cli/ansible-pull.rst:290
+#: ../../rst/cli/ansible-vault.rst:370 ../../rst/cli/ansible.rst:272
+msgid "Ansible is released under the terms of the GPLv3+ License."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:172 ../../rst/cli/ansible-console.rst:250
+#: ../../rst/cli/ansible-doc.rst:154 ../../rst/cli/ansible-galaxy.rst:814
+#: ../../rst/cli/ansible-inventory.rst:182
+#: ../../rst/cli/ansible-playbook.rst:277 ../../rst/cli/ansible-pull.rst:293
+#: ../../rst/cli/ansible-vault.rst:373 ../../rst/cli/ansible.rst:275
+msgid "See also"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:174 ../../rst/cli/ansible-console.rst:252
+#: ../../rst/cli/ansible-doc.rst:156 ../../rst/cli/ansible-galaxy.rst:816
+#: ../../rst/cli/ansible-inventory.rst:184
+#: ../../rst/cli/ansible-playbook.rst:279 ../../rst/cli/ansible-pull.rst:295
+#: ../../rst/cli/ansible-vault.rst:375 ../../rst/cli/ansible.rst:277
+msgid ":manpage:`ansible(1)`,  :manpage:`ansible-config(1)`,  :manpage:`ansible-console(1)`,  :manpage:`ansible-doc(1)`,  :manpage:`ansible-galaxy(1)`,  :manpage:`ansible-inventory(1)`,  :manpage:`ansible-playbook(1)`,  :manpage:`ansible-pull(1)`,  :manpage:`ansible-vault(1)`,"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:7
+msgid "ansible-config"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:10
+msgid ":strong:`View ansible configuration.`"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:33
+msgid "Config command line class"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:62 ../../rst/cli/ansible-galaxy.rst:62
+#: ../../rst/cli/ansible-vault.rst:71
+msgid "Actions"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:70
+msgid "list"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:72
+msgid "list all current configs reading lib/constants.py and shows env and config file setting names"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:80 ../../rst/cli/ansible-config.rst:106
+#: ../../rst/cli/ansible-config.rst:128
+msgid "path to configuration file, defaults to first file found in precedence."
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:92
+msgid "dump"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:94
+msgid "Shows the current settings, merges ansible.cfg if specified"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:102
+msgid "Only show configurations that have changed from the default"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:118 ../../rst/cli/ansible-vault.rst:181
+msgid "view"
+msgstr ""
+
+#: ../../rst/cli/ansible-config.rst:120
+msgid "Displays the current config file"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:7
+msgid "ansible-console"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:10
+msgid ":strong:`REPL console for executing Ansible tasks.`"
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:47
+msgid "a REPL that allows for running ad-hoc tasks against a chosen inventory (based on dominis' ansible-shell)."
+msgstr ""
+
+#: ../../rst/cli/ansible-console.rst:108 ../../rst/cli/ansible-playbook.rst:135
+msgid "one-step-at-a-time: confirm each task before running"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:7
+msgid "ansible-doc"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:10
+msgid ":strong:`plugin documentation tool`"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:38
+msgid "displays information on modules installed in Ansible libraries. It displays a terse listing of plugins and their short descriptions, provides a printout of their DOCUMENTATION strings, and it can create a short \"snippet\" which can be pasted into a playbook."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:52
+msgid "**For internal testing only** Dump json metadata for all plugins."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:67
+msgid "Show plugin names and their source files without summaries (implies --list). A supplied argument will be used for filtering, can be a namespace or full collection name."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:77
+msgid "Select the entry point for role(s)."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:87
+msgid "Change output into json format."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:92
+msgid "List available plugins. A supplied argument will be used for filtering, can be a namespace or full collection name."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:97
+msgid "The path to the directory containing your roles."
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:102
+msgid "Show playbook snippet for specified plugin(s)"
+msgstr ""
+
+#: ../../rst/cli/ansible-doc.rst:107
+msgid "Choose which plugin type (defaults to \"module\"). Available plugin types are : ('become', 'cache', 'callback', 'cliconf', 'connection', 'httpapi', 'inventory', 'lookup', 'netconf', 'shell', 'vars', 'module', 'strategy', 'role', 'keyword')"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:7
+msgid "ansible-galaxy"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:10
+msgid ":strong:`Perform various Role and Collection related operations.`"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:33
+msgid "command to manage Ansible roles in shared repositories, the default of which is Ansible Galaxy *https://galaxy.ansible.com*."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:70
+msgid "collection"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:72
+msgid "Perform the action on an Ansible Galaxy collection. Must be combined with a further action like init/install as listed below."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:84
+msgid "collection download"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:94 ../../rst/cli/ansible-galaxy.rst:268
+msgid "Clear the existing server response cache."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:98 ../../rst/cli/ansible-galaxy.rst:276
+msgid "Do not use the server response cache."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:102 ../../rst/cli/ansible-galaxy.rst:280
+msgid "Include pre-release versions. Semantic versioning pre-releases are ignored by default"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:106 ../../rst/cli/ansible-galaxy.rst:156
+#: ../../rst/cli/ansible-galaxy.rst:195 ../../rst/cli/ansible-galaxy.rst:236
+#: ../../rst/cli/ansible-galaxy.rst:284 ../../rst/cli/ansible-galaxy.rst:333
+#: ../../rst/cli/ansible-galaxy.rst:366 ../../rst/cli/ansible-galaxy.rst:435
+#: ../../rst/cli/ansible-galaxy.rst:472 ../../rst/cli/ansible-galaxy.rst:505
+#: ../../rst/cli/ansible-galaxy.rst:534 ../../rst/cli/ansible-galaxy.rst:579
+#: ../../rst/cli/ansible-galaxy.rst:624 ../../rst/cli/ansible-galaxy.rst:661
+#: ../../rst/cli/ansible-galaxy.rst:698 ../../rst/cli/ansible-galaxy.rst:738
+msgid "The Ansible Galaxy API key which can be found at https://galaxy.ansible.com/me/preferences."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:110 ../../rst/cli/ansible-galaxy.rst:160
+#: ../../rst/cli/ansible-galaxy.rst:199 ../../rst/cli/ansible-galaxy.rst:240
+#: ../../rst/cli/ansible-galaxy.rst:288 ../../rst/cli/ansible-galaxy.rst:337
+#: ../../rst/cli/ansible-galaxy.rst:370 ../../rst/cli/ansible-galaxy.rst:443
+#: ../../rst/cli/ansible-galaxy.rst:476 ../../rst/cli/ansible-galaxy.rst:509
+#: ../../rst/cli/ansible-galaxy.rst:538 ../../rst/cli/ansible-galaxy.rst:583
+#: ../../rst/cli/ansible-galaxy.rst:628 ../../rst/cli/ansible-galaxy.rst:665
+#: ../../rst/cli/ansible-galaxy.rst:702 ../../rst/cli/ansible-galaxy.rst:742
+msgid "Ignore SSL certificate validation errors."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:114
+msgid "Don't download collection(s) listed as dependencies."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:118
+msgid "The directory to download the collections to."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:122
+msgid "A file containing a list of collections to be downloaded."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:126 ../../rst/cli/ansible-galaxy.rst:168
+#: ../../rst/cli/ansible-galaxy.rst:207 ../../rst/cli/ansible-galaxy.rst:244
+#: ../../rst/cli/ansible-galaxy.rst:312 ../../rst/cli/ansible-galaxy.rst:345
+#: ../../rst/cli/ansible-galaxy.rst:386 ../../rst/cli/ansible-galaxy.rst:451
+#: ../../rst/cli/ansible-galaxy.rst:484 ../../rst/cli/ansible-galaxy.rst:513
+#: ../../rst/cli/ansible-galaxy.rst:546 ../../rst/cli/ansible-galaxy.rst:587
+#: ../../rst/cli/ansible-galaxy.rst:632 ../../rst/cli/ansible-galaxy.rst:673
+#: ../../rst/cli/ansible-galaxy.rst:710 ../../rst/cli/ansible-galaxy.rst:770
+msgid "The Galaxy API server URL"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:137
+msgid "collection init"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:139 ../../rst/cli/ansible-galaxy.rst:414
+msgid "Creates the skeleton framework of a role or collection that complies with the Galaxy metadata format. Requires a role or collection name. The collection name must be in the format ``<namespace>.<collection>``."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:148
+msgid "The path to a collection skeleton that the new collection should be based upon."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:152
+msgid "The path in which the skeleton collection will be created. The default is the current working directory."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:164 ../../rst/cli/ansible-galaxy.rst:203
+#: ../../rst/cli/ansible-galaxy.rst:292 ../../rst/cli/ansible-galaxy.rst:447
+#: ../../rst/cli/ansible-galaxy.rst:746
+msgid "Force overwriting an existing role or collection"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:179
+msgid "collection build"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:181
+msgid "Build an Ansible Galaxy collection artifact that can be stored in a central repository like Ansible Galaxy. By default, this command builds from the current working directory. You can optionally pass in the collection input path (where the ``galaxy.yml`` file is)."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:191
+msgid "The path in which the collection is built to. The default is the current working directory."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:218
+msgid "collection publish"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:220
+msgid "Publish a collection into Ansible Galaxy. Requires the path to the collection tarball to publish."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:228
+msgid "The time to wait for the collection import process to finish."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:232
+msgid "Don't wait for import validation results."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:255
+msgid "collection install"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:257 ../../rst/cli/ansible-galaxy.rst:723
+msgid "Install one or more roles(``ansible-galaxy role install``), or one or more collections(``ansible-galaxy collection install``). You can pass in a list (roles or collections) or use the file option listed below (these are mutually exclusive). If you pass in a list, it can be a name (which will be downloaded via the galaxy API and github), or it can be a local tar archive file."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:272
+msgid "Force overwriting an existing collection and its dependencies."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:296
+msgid "Ignore errors during installation and continue with the next specified collection. This will not ignore dependency conflict errors."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:300
+msgid "Don't download collections listed as dependencies."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:304
+msgid "The path to the directory containing your collections."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:308
+msgid "A file containing a list of collections to be installed."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:323
+msgid "collection list"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:325 ../../rst/cli/ansible-galaxy.rst:526
+msgid "List installed collections or roles"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:341 ../../rst/cli/ansible-galaxy.rst:378
+msgid "One or more directories to search for collections in addition to the default COLLECTIONS_PATHS. Separate multiple paths with ':'."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:356
+msgid "collection verify"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:374
+msgid "Ignore errors during verification and continue with the next specified collection."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:382
+msgid "A file containing a list of collections to be verified."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:398
+msgid "role"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:400
+msgid "Perform the action on an Ansible Galaxy role. Must be combined with a further action like delete/install/init as listed below."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:412
+msgid "role init"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:423
+msgid "The path in which the skeleton role will be created. The default is the current working directory."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:427 ../../rst/cli/ansible-galaxy.rst:694
+msgid "Don't query the galaxy API when creating roles"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:431
+msgid "The path to a role skeleton that the new role should be based upon."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:439
+msgid "Initialize using an alternate role type. Valid types include: 'container', 'apb' and 'network'."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:462
+msgid "role remove"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:464
+msgid "removes the list of roles passed as arguments from the local system."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:480 ../../rst/cli/ansible-galaxy.rst:542
+#: ../../rst/cli/ansible-galaxy.rst:669 ../../rst/cli/ansible-galaxy.rst:706
+#: ../../rst/cli/ansible-galaxy.rst:762
+msgid "The path to the directory containing your roles. The default is the first writable one configured via DEFAULT_ROLES_PATH: ~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:495
+msgid "role delete"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:497
+msgid "Delete a role from Ansible Galaxy."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:524
+msgid "role list"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:557
+msgid "role search"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:559
+msgid "searches for roles on the Ansible Galaxy server"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:567
+msgid "GitHub username"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:571
+msgid "list of galaxy tags to filter by"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:575
+msgid "list of OS platforms to filter by"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:598
+msgid "role import"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:600
+msgid "used to import a role into Ansible Galaxy"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:608
+msgid "The name of a branch to import. Defaults to the repository's default branch (usually master)"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:612
+msgid "Don't wait for import results."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:616
+msgid "The name the role should have, if different than the repo name"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:620
+msgid "Check the status of the most recent import request for given github_user/github_repo."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:643
+msgid "role setup"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:645
+msgid "Setup an integration from Github or Travis for Ansible Galaxy roles"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:653
+msgid "List all of your integrations."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:657
+msgid "Remove the integration matching the provided ID value. Use --list to see ID values."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:684
+msgid "role info"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:686
+msgid "prints out detailed information about an installed role as well as info available from the galaxy API."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:721
+msgid "role install"
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:734
+msgid "Force overwriting an existing role and its dependencies."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:750
+msgid "Use tar instead of the scm archive option when packaging the role."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:754
+msgid "Ignore errors and continue with the next specified role."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:758
+msgid "Don't download roles listed as dependencies."
+msgstr ""
+
+#: ../../rst/cli/ansible-galaxy.rst:766
+msgid "A file containing a list of roles to be installed."
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:7
+msgid "ansible-inventory"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:10
+msgid ":strong:`None`"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:39
+msgid "used to display or dump the configured inventory as Ansible sees it"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:55
+msgid "When doing an --list, represent in a way that is optimized for export,not as an accurate representation of how Ansible has processed it"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:60
+msgid "create inventory graph, if supplying pattern it must be a valid group name"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:65
+msgid "Output specific host info, works as inventory script"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:70
+msgid "Output all hosts info, works as inventory script"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:75
+#: ../../rst/cli/ansible-inventory.rst:130
+msgid "==SUPPRESS=="
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:80
+msgid "When doing --list, send the inventory to a file instead of to the screen"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:90
+msgid "Use TOML format instead of default JSON, ignored for --graph"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:95
+msgid "Add vars to graph display, ignored unless used with --graph"
+msgstr ""
+
+#: ../../rst/cli/ansible-inventory.rst:140
+msgid "Use YAML format instead of default JSON, ignored for --graph"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:7
+msgid "ansible-playbook"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:10
+msgid ":strong:`Runs Ansible playbooks, executing the defined tasks on the targeted hosts.`"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:48
+msgid "the tool to run *Ansible playbooks*, which are a configuration and multinode deployment system. See the project home page (https://docs.ansible.com) for more information."
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:75
+msgid "clear the fact cache for every host in inventory"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:80
+msgid "run handlers even if a task fails"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:90
+msgid "list all available tags"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:95
+msgid "list all tasks that would be executed"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:115 ../../rst/cli/ansible-pull.rst:121
+msgid "only run plays and tasks whose tags do not match these values"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:130
+msgid "start the playbook at the task matching this name"
+msgstr ""
+
+#: ../../rst/cli/ansible-playbook.rst:225 ../../rst/cli/ansible-pull.rst:241
+msgid "only run plays and tasks tagged with these values"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:7
+msgid "ansible-pull"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:10
+msgid ":strong:`pulls playbooks from a VCS repo and executes them for the local host`"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:47
+msgid "Used to pull a remote copy of ansible on each managed node, each set to run via cron and update playbook source via a source repository. This inverts the default *push* architecture of ansible into a *pull* architecture, which has near-limitless scaling potential."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:52
+msgid "The setup playbook can be tuned to change the cron frequency, logging locations, and parameters to ansible-pull. This is useful both for extreme scale-out as well as periodic remediation. Usage of the 'fetch' module to retrieve logs from ansible-pull runs would be an excellent way to gather and analyze remote logs from ansible-pull."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:66
+msgid "adds the hostkey for the repo url if not already added"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:81
+msgid "modified files in the working repository will be discarded"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:91
+msgid "Do a full clone, instead of a shallow one."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:106
+msgid "purge checkout after playbook run"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:136
+msgid "submodules will track the latest changes. This is equivalent to specifying the --remote flag to git submodule update"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:151
+msgid "verify GPG signature of checked out commit, if it fails abort running the playbook. This needs the corresponding VCS module to support such an operation"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:161
+msgid "branch/tag/commit to checkout. Defaults to behavior of repository module."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:181
+msgid "URL of the playbook repository"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:191
+msgid "directory to checkout repository to"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:201
+msgid "run the playbook even if the repository could not be updated"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:226
+msgid "Repository module name, which ansible will use to check out the repo. Choices are ('git', 'subversion', 'hg', 'bzr'). Default is git."
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:231
+msgid "only run the playbook if the repository has been updated"
+msgstr ""
+
+#: ../../rst/cli/ansible-pull.rst:236
+msgid "sleep for random interval (between 0 and n number of seconds) before starting. This is a useful way to disperse git requests"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:7
+msgid "ansible-vault"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:10
+msgid ":strong:`encryption/decryption utility for Ansible data files`"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:35
+msgid "can encrypt any structured data file used by Ansible. This can include *group_vars/* or *host_vars/* inventory variables, variables loaded by *include_vars* or *vars_files*, or variable files passed on the ansible-playbook command line with *-e @file.yml* or *-e @file.json*. Role variables and defaults are also included!"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:41
+msgid "Because Ansible tasks, handlers, and other objects are data, these can also be encrypted with vault. If you'd like to not expose what variables you are using, you can keep an individual task file entirely encrypted."
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:79
+msgid "create"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:81
+msgid "create and open a file in an editor that will be encrypted with the provided vault secret when closed"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:93 ../../rst/cli/ansible-vault.rst:161
+#: ../../rst/cli/ansible-vault.rst:225 ../../rst/cli/ansible-vault.rst:263
+#: ../../rst/cli/ansible-vault.rst:313
+msgid "the vault id used to encrypt (required if more than one vault-id is provided)"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:113
+msgid "decrypt"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:115
+msgid "decrypt the supplied file using the provided vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:127 ../../rst/cli/ansible-vault.rst:229
+#: ../../rst/cli/ansible-vault.rst:267
+msgid "output file name for encrypt or decrypt; use - for stdout"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:147
+msgid "edit"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:149
+msgid "open and decrypt an existing vaulted file in an editor, that will be encrypted again when closed"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:183
+msgid "open, decrypt and view an existing vaulted file using a pager using the supplied vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:211
+msgid "encrypt"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:213
+msgid "encrypt the supplied file using the provided vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:249
+msgid "encrypt_string"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:251
+msgid "encrypt the supplied string using the provided vault secret"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:271
+msgid "Specify the variable name for stdin"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:283
+msgid "Specify the variable name"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:287
+msgid "Prompt for the string to encrypt"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:299
+msgid "rekey"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:301
+msgid "re-encrypt a vaulted file with a new secret, the previous secret is required"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:317
+msgid "the new vault identity to use for rekey"
+msgstr ""
+
+#: ../../rst/cli/ansible-vault.rst:321
+msgid "new vault password file for rekey"
+msgstr ""
+

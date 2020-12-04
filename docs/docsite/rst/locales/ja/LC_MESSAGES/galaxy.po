@@ -1,0 +1,919 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-04 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../rst/galaxy/dev_guide.rst:5
+msgid "Galaxy Developer Guide"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:7
+msgid "You can host collections and roles on Galaxy to share with the Ansible community. Galaxy content is formatted in pre-packaged units of work such as :ref:`roles <playbooks_reuse_roles>`, and new in Galaxy 3.2, :ref:`collections <collections>`. You can create roles for provisioning infrastructure, deploying applications, and all of the tasks you do everyday. Taking this a step further, you can create collections which provide a comprehensive package of automation that may include multiple playbooks, roles, modules, and plugins."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:17
+msgid "Creating collections for Galaxy"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:19
+msgid "Collections are a distribution format for Ansible content. You can use collections to package and distribute playbooks, roles, modules, and plugins. You can publish and use collections through `Ansible Galaxy <https://galaxy.ansible.com>`_."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:22
+msgid "See :ref:`developing_collections` for details on how to create collections."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:28
+msgid "Creating roles for Galaxy"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:30
+msgid "Use the ``init`` command to initialize the base structure of a new role, saving time on creating the various directories and main.yml files a role requires"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:36
+msgid "The above will create the following directory structure in the current working directory:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:57
+msgid "If you want to create a repository for the role the repository root should be `role_name`."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:60
+msgid "Force"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:62
+msgid "If a directory matching the name of the role already exists in the current working directory, the init command will result in an error. To ignore the error use the ``--force`` option. Force will create the above subdirectories and files, replacing anything that matches."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:66
+msgid "Container enabled"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:68
+msgid "If you are creating a Container Enabled role, pass ``--type container`` to ``ansible-galaxy init``. This will create the same directory structure as above, but populate it with default files appropriate for a Container Enabled role. For instance, the README.md has a slightly different structure, the *.travis.yml* file tests the role using `Ansible Container <https://github.com/ansible/ansible-container>`_, and the meta directory includes a *container.yml* file."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:73
+msgid "Using a custom role skeleton"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:75
+msgid "A custom role skeleton directory can be supplied as follows:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:81
+msgid "When a skeleton is provided, init will:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:83
+msgid "copy all files and directories from the skeleton to the new role"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:84
+msgid "any .j2 files found outside of a templates folder will be rendered as templates. The only useful variable at the moment is role_name"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:85
+msgid "The .git folder and any .git_keep files will not be copied"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:87
+msgid "Alternatively, the role_skeleton and ignoring of files can be configured via ansible.cfg"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:96
+msgid "Authenticate with Galaxy"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:98
+msgid "Using the ``import``, ``delete`` and ``setup`` commands to manage your roles on the Galaxy website requires authentication, and the ``login`` command can be used to do just that. Before you can use the ``login`` command, you must create an account on the Galaxy website."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:101
+msgid "The ``login`` command requires using your GitHub credentials. You can use your username and password, or you can create a `personal access token <https://help.github.com/articles/creating-an-access-token-for-command-line-use/>`_. If you choose to create a token, grant minimal access to the token, as it is used just to verify identify."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:103
+msgid "The following shows authenticating with the Galaxy website using a GitHub username and password:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:119
+msgid "When you choose to use your username and password, your password is not sent to Galaxy. It is used to authenticates with GitHub and create a personal access token. It then sends the token to Galaxy, which in turn verifies that your identity and returns a Galaxy access token. After authentication completes the GitHub token is destroyed."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:123
+msgid "If you do not want to use your GitHub password, or if you have two-factor authentication enabled with GitHub, use the ``--github-token`` option to pass a personal access token that you create."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:127
+msgid "Import a role"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:129
+msgid "The ``import`` command requires that you first authenticate using the ``login`` command. Once authenticated you can import any GitHub repository that you own or have been granted access."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:131
+msgid "Use the following to import to role:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:137
+msgid "By default the command will wait for Galaxy to complete the import process, displaying the results as the import progresses:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:155
+msgid "Branch"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:157
+msgid "Use the ``--branch`` option to import a specific branch. If not specified, the default branch for the repo will be used."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:160
+msgid "Role name"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:162
+msgid "By default the name given to the role will be derived from the GitHub repository name. However, you can use the ``--role-name`` option to override this and set the name."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:165
+msgid "No wait"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:167
+msgid "If the ``--no-wait`` option is present, the command will not wait for results. Results of the most recent import for any of your roles is available on the Galaxy web site by visiting *My Imports*."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:170
+msgid "Delete a role"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:172
+msgid "The ``delete`` command requires that you first authenticate using the ``login`` command. Once authenticated you can remove a role from the Galaxy web site. You are only allowed to remove roles where you have access to the repository in GitHub."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:174
+msgid "Use the following to delete a role:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:180
+msgid "This only removes the role from Galaxy. It does not remove or alter the actual GitHub repository."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:184
+msgid "Travis integrations"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:186
+msgid "You can create an integration or connection between a role in Galaxy and `Travis <https://travis-ci.org>`_. Once the connection is established, a build in Travis will automatically trigger an import in Galaxy, updating the search index with the latest information about the role."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:189
+msgid "You create the integration using the ``setup`` command, but before an integration can be created, you must first authenticate using the ``login`` command; you will also need an account in Travis, and your Travis token. Once you're ready, use the following command to create the integration:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:196
+msgid "The setup command requires your Travis token, however the token is not stored in Galaxy. It is used along with the GitHub username and repo to create a hash as described in `the Travis documentation <https://docs.travis-ci.com/user/notifications/>`_. The hash is stored in Galaxy and used to verify notifications received from Travis."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:199
+msgid "The setup command enables Galaxy to respond to notifications. To configure Travis to run a build on your repository and send a notification, follow the `Travis getting started guide <https://docs.travis-ci.com/user/getting-started/>`_."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:202
+msgid "To instruct Travis to notify Galaxy when a build completes, add the following to your .travis.yml file:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:211
+msgid "List Travis integrations"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:213
+msgid "Use the ``--list`` option to display your Travis integrations:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:227
+msgid "Remove Travis integrations"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:229
+msgid "Use the ``--remove`` option to disable and remove a Travis integration:"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:235
+msgid "Provide the ID of the integration to be disabled. You can find the ID by using the ``--list`` option."
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:239 ../../rst/galaxy/user_guide.rst:490
+msgid ":ref:`collections`"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:240 ../../rst/galaxy/user_guide.rst:491
+msgid "Shareable collections of modules, playbooks and roles"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:241 ../../rst/galaxy/user_guide.rst:492
+msgid ":ref:`playbooks_reuse_roles`"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:242
+msgid "All about ansible roles"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:243
+msgid "`Mailing List <https://groups.google.com/group/ansible-project>`_"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:244
+msgid "Questions? Help? Ideas?  Stop by the list on Google Groups"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:245
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/galaxy/dev_guide.rst:246
+msgid "#ansible IRC chat channel"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:6
+msgid "Galaxy User Guide"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:8
+msgid ":dfn:`Ansible Galaxy` refers to the `Galaxy <https://galaxy.ansible.com>`_  website, a free site for finding, downloading, and sharing community developed roles."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:10
+msgid "Use Galaxy to jump-start your automation project with great content from the Ansible community. Galaxy provides pre-packaged units of work such as :ref:`roles <playbooks_reuse_roles>`, and new in Galaxy 3.2, :ref:`collections <collections>` You can find roles for provisioning infrastructure, deploying applications, and all of the tasks you do everyday. The collection format provides a comprehensive package of automation that may include multiple playbooks, roles, modules, and plugins."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:19
+msgid "Finding collections on Galaxy"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:21
+msgid "To find collections on Galaxy:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:23
+msgid "Click the :guilabel:`Search` icon in the left-hand navigation."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:24
+msgid "Set the filter to *collection*."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:25
+msgid "Set other filters and press :guilabel:`enter`."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:27
+msgid "Galaxy presents a list of collections that match your search criteria."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:33
+msgid "Installing collections"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:37
+msgid "Installing a collection from Galaxy"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:3
+msgid "By default, ``ansible-galaxy collection install`` uses https://galaxy.ansible.com as the Galaxy server (as listed in the :file:`ansible.cfg` file under :ref:`galaxy_server`). You do not need any further configuration."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:7
+msgid "See :ref:`Configuring the ansible-galaxy client <galaxy_server_config>` if you are using any other Galaxy server, such as Red Hat Automation Hub."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:9
+msgid "To install a collection hosted in Galaxy:"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:15
+msgid "You can also directly use the tarball from your build:"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:22
+msgid "The install command automatically appends the path ``ansible_collections`` to the one specified  with the ``-p`` option unless the parent directory is already in a folder called ``ansible_collections``."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:26
+msgid "When using the ``-p`` option to specify the install path, use one of the values configured in :ref:`COLLECTIONS_PATHS`, as this is where Ansible itself will expect to find collections. If you don't specify a path, ``ansible-galaxy collection install`` installs the collection to the first path defined in :ref:`COLLECTIONS_PATHS`, which by default is ``~/.ansible/collections``"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:30
+msgid "You can also keep a collection adjacent to the current playbook, under a ``collections/ansible_collections/`` directory structure."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections.txt:42
+msgid "See :ref:`collection_structure` for details on the collection directory structure."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:44
+msgid "Downloading a collection from Automation Hub"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:46
+msgid "You can download collections from Automation Hub at the command line. Automation Hub content is available to subscribers only, so you must download an API token and configure your local environment to provide it before you can you download collections. To download a collection from Automation Hub with the ``ansible-galaxy`` command:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:48
+msgid "Get your Automation Hub API token. Go to https://cloud.redhat.com/ansible/automation-hub/token/ and click :guilabel:`Get API token` from the version dropdown to copy your API token."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:49
+msgid "Configure Red Hat Automation Hub server in the ``server_list``  option under the ``[galaxy]`` section in your :file:`ansible.cfg` file."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:61
+msgid "Download the collection hosted in Automation Hub."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:68
+msgid "`Getting started with Automation Hub <https://www.ansible.com/blog/getting-started-with-ansible-hub>`_"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:69
+msgid "An introduction to Automation Hub"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:72
+msgid "Installing an older version of a collection"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:2
+msgid "You can only have one version of a collection installed at a time. By default ``ansible-galaxy`` installs the latest available version. If you want to install a specific version, you can add a version range identifier. For example, to install the 1.0.0-beta.1 version of the collection:"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:8
+msgid "You can specify multiple range identifiers separated by ``,``. Use single quotes so the shell passes the entire command, including ``>``, ``!``, and other operators, along. For example, to install the most recent version that is greater than or equal to 1.0.0 and less than 2.0.0:"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:14
+msgid "Ansible will always install the most recent version that meets the range identifiers you specify. You can use the following range identifiers:"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:16
+msgid "``*``: The most recent version. This is the default."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:17
+msgid "``!=``: Not equal to the version specified."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:18
+msgid "``==``: Exactly the version specified."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:19
+msgid "``>=``: Greater than or equal to the version specified."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:20
+msgid "``>``: Greater than the version specified."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:21
+msgid "``<=``: Less than or equal to the version specified."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:22
+msgid "``<``: Less than the version specified."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_older_collection.txt:25
+msgid "By default ``ansible-galaxy`` ignores pre-release versions. To install a pre-release version, you must use the ``==`` range identifier to require it explicitly."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:77
+msgid "Install multiple collections with a requirements file"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:2
+msgid "You can also setup a ``requirements.yml`` file to install multiple collections in one command. This file is a YAML file in the format:"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:16
+msgid "The supported keys for collection requirement entries are ``name``, ``version``, ``source``, and ``type``."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:18
+msgid "The ``version`` key can take in the same range identifier format documented above. If you're installing a collection from a git repository instead of a built collection artifact, the ``version`` key refers to a `git commit-ish <https://git-scm.com/docs/gitglossary#def_commit-ish>`_."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:20
+msgid "The ``type`` key can be set to ``galaxy``, ``url``, ``file``, and ``git``. If ``type`` is omitted, the ``name`` key is used to implicitly determine the source of the collection."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:22
+msgid "Roles can also be specified and placed under the ``roles`` key. The values follow the same format as a requirements file used in older Ansible releases."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:39
+msgid "To install both roles and collections at the same time with one command, run the following:"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:45
+msgid "Running ``ansible-galaxy collection install -r`` or ``ansible-galaxy role install -r`` will only install collections, or roles respectively."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_multiple_collections.txt:49
+msgid "Installing both roles and collections from the same requirements file will not work when specifying a custom collection or role install path. In this scenario the collections will be skipped and the command will process each like ``ansible-galaxy role install`` would."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:82
+msgid "Downloading a collection for offline use"
+msgstr ""
+
+#: ../../rst/shared_snippets/download_tarball_collections.txt:3
+msgid "To download the collection tarball from Galaxy for offline use:"
+msgstr ""
+
+#: ../../rst/shared_snippets/download_tarball_collections.txt:5
+msgid "Navigate to the collection page."
+msgstr ""
+
+#: ../../rst/shared_snippets/download_tarball_collections.txt:6
+msgid "Click on :guilabel:`Download tarball`."
+msgstr ""
+
+#: ../../rst/shared_snippets/download_tarball_collections.txt:8
+msgid "You may also need to manually download any dependent collections."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:87
+msgid "Installing a collection from a git repository"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:1
+msgid "You can install a collection in a git repository by providing the URI to the repository instead of a collection name or path to a ``tar.gz`` file. The collection must contain a ``galaxy.yml`` file, which will be used to generate the would-be collection artifact data from the directory. The URI should be prefixed with ``git+`` (or with ``git@`` to use a private repository with ssh authentication) and optionally supports a comma-separated `git commit-ish <https://git-scm.com/docs/gitglossary#def_commit-ish>`_ version (for example, a commit or tag)."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:5
+msgid "Embedding credentials into a git URI is not secure. Make sure to use safe auth options for security reasons. For example, use `SSH <https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh>`_, `netrc <https://linux.die.net/man/5/netrc>`_ or `http.extraHeader <https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpextraHeader>`_/`url.<base>.pushInsteadOf <https://git-scm.com/docs/git-config#Documentation/git-config.txt-urlltbasegtpushInsteadOf>`_ in Git config to prevent your creds from being exposed in logs."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:18
+msgid "In a ``requirements.yml`` file, you can also use the ``type`` and ``version`` keys in addition to using the ``git+repo,version`` syntax for the collection name."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:27
+msgid "Git repositories can be used for collection dependencies as well. This can be helpful for local development and testing but built/published artifacts should only have dependencies on other artifacts."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:34
+msgid "Default repository search locations"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:36
+msgid "There are two paths searched in a repository for collections by default."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:38
+msgid "The first is the ``galaxy.yml`` file in the top level of the repository path. If the ``galaxy.yml`` file exists it's used as the collection metadata and the individual collection will be installed."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:49
+msgid "The second is a ``galaxy.yml`` file in each directory in the repository path (one level deep). In this scenario, each directory with a ``galaxy.yml`` is installed as a collection."
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:62
+msgid "Specifying the location to search for collections"
+msgstr ""
+
+#: ../../rst/shared_snippets/installing_collections_git_repo.txt:64
+msgid "If you have a different repository structure or only want to install a subset of collections, you can add a fragment to the end of your URI (before the optional comma-separated version) to indicate which path ansible-galaxy should inspect for ``galaxy.yml`` file(s). The path should be a directory to a collection or multiple collections (rather than the path to a ``galaxy.yml`` file)."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:92
+msgid "Listing installed collections"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:94
+msgid "To list installed collections, run ``ansible-galaxy collection list``. See :ref:`collections_listing` for more details."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:98
+msgid "Configuring the ``ansible-galaxy`` client"
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:3
+msgid "By default, ``ansible-galaxy`` uses https://galaxy.ansible.com as the Galaxy server (as listed in the :file:`ansible.cfg` file under :ref:`galaxy_server`)."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:5
+msgid "You can use either option below to configure ``ansible-galaxy collection`` to use other servers (such as Red Hat Automation Hub or a custom Galaxy server):"
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:7
+msgid "Set the server list in the :ref:`galaxy_server_list` configuration option in :ref:`ansible_configuration_settings_locations`."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:8
+msgid "Use the ``--server`` command line argument to limit to an individual server."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:10
+msgid "To configure a Galaxy server list in ``ansible.cfg``:"
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:13
+msgid "Add the ``server_list``  option under the ``[galaxy]`` section to one or more server names."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:14
+msgid "Create a new section for each server name."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:15
+msgid "Set the ``url`` option for each server name."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:16
+msgid "Optionally, set the API token for each server name. Go to https://galaxy.ansible.com/me/preferences and click :guilabel:`Show API key`."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:19
+msgid "The ``url`` option for each server name must end with a forward slash ``/``. If you do not set the API token in your Galaxy server list, use the ``--api-key`` argument to pass in the token to  the ``ansible-galaxy collection publish`` command."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:21
+msgid "For Automation Hub, you additionally need to:"
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:23
+msgid "Set the ``auth_url`` option for each server name."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:24
+msgid "Set the API token for each server name. Go to https://cloud.redhat.com/ansible/automation-hub/token/ and click ::guilabel:`Get API token` from the version dropdown to copy your API token."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:26
+msgid "The following example shows how to configure multiple servers:"
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:52
+msgid "You can use the ``--server`` command line argument to select an explicit Galaxy server in the ``server_list`` and the value of this argument should match the name of the server. To use a server not in the server list, set the value to the URL to access that server (all servers in the server list will be ignored). Also you cannot use the ``--api-key`` argument for any of the predefined servers. You can only use the ``api_key`` argument if you did not define a server list or if you specify a URL in the ``--server`` argument."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:56
+msgid "**Galaxy server list configuration options**"
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:58
+msgid "The :ref:`galaxy_server_list` option is a list of server identifiers in a prioritized order. When searching for a collection, the install process will search in that order, for example, ``automation_hub`` first, then ``my_org_hub``, ``release_galaxy``, and finally ``test_galaxy`` until the collection is found. The actual Galaxy instance is then defined under the section ``[galaxy_server.{{ id }}]`` where ``{{ id }}`` is the server identifier defined in the list. This section can then define the following keys:"
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:64
+msgid "``url``: The URL of the Galaxy instance to connect to. Required."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:65
+msgid "``token``: An API token key to use for authentication against the Galaxy instance. Mutually exclusive with ``username``."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:66
+msgid "``username``: The username to use for basic authentication against the Galaxy instance. Mutually exclusive with ``token``."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:67
+msgid "``password``: The password to use, in conjunction with ``username``, for basic authentication."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:68
+msgid "``auth_url``: The URL of a Keycloak server 'token_endpoint' if using SSO authentication (for example, Automation Hub). Mutually exclusive with ``username``. Requires ``token``."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:70
+msgid "As well as defining these server options in the ``ansible.cfg`` file, you can also define them as environment variables. The environment variable is in the form ``ANSIBLE_GALAXY_SERVER_{{ id }}_{{ key }}`` where ``{{ id }}`` is the upper case form of the server identifier and ``{{ key }}`` is the key to define. For example I can define ``token`` for ``release_galaxy`` by setting ``ANSIBLE_GALAXY_SERVER_RELEASE_GALAXY_TOKEN=secret_token``."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:75
+msgid "For operations that use only one Galaxy server (for example, the ``publish``, ``info``, or ``install`` commands). the ``ansible-galaxy collection`` command uses the first entry in the ``server_list``, unless you pass in an explicit server with the ``--server`` argument."
+msgstr ""
+
+#: ../../rst/shared_snippets/galaxy_server_list.txt:79
+msgid "Once a collection is found, any of its requirements are only searched within the same Galaxy instance as the parent collection. The install process will not search for a collection requirement in a different Galaxy instance."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:105
+msgid "Finding roles on Galaxy"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:107
+msgid "Search the Galaxy database by tags, platforms, author and multiple keywords. For example:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:113
+msgid "The search command will return a list of the first 1000 results matching your search:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:126
+msgid "Get more information about a role"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:128
+msgid "Use the ``info`` command to view more detail about a specific role:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:134
+msgid "This returns everything found in Galaxy for the role:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:171
+msgid "Installing roles from Galaxy"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:173
+msgid "The ``ansible-galaxy`` command comes bundled with Ansible, and you can use it to install roles from Galaxy or directly from a git based SCM. You can also use it to create a new role, remove roles, or perform tasks on the Galaxy website."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:176
+msgid "The command line tool by default communicates with the Galaxy website API using the server address *https://galaxy.ansible.com*. If you run your own internal Galaxy server and want to use it instead of the default one, pass the ``--server`` option following the address of this galaxy server. You can set permanently this option by setting the Galaxy server value in your ``ansible.cfg`` file to use it . For information on setting the value in *ansible.cfg* see :ref:`galaxy_server`."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:182
+msgid "Installing roles"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:184
+msgid "Use the ``ansible-galaxy`` command to download roles from the `Galaxy website <https://galaxy.ansible.com>`_"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:191
+msgid "Setting where to install roles"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:193
+msgid "By default, Ansible downloads roles to the first writable directory in the default list of paths ``~/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles``. This installs roles in the home directory of the user running ``ansible-galaxy``."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:195
+msgid "You can override this with one of the following options:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:197
+msgid "Set the environment variable :envvar:`ANSIBLE_ROLES_PATH` in your session."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:198
+msgid "Use the ``--roles-path`` option for the ``ansible-galaxy`` command."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:199
+msgid "Define ``roles_path`` in an ``ansible.cfg`` file."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:201
+msgid "The following provides an example of using ``--roles-path`` to install the role into the current working directory:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:209
+msgid ":ref:`intro_configuration`"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:210
+msgid "All about configuration files"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:213
+msgid "Installing a specific version of a role"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:215
+msgid "When the Galaxy server imports a role, it imports any git tags matching the `Semantic Version <https://semver.org/>`_ format as versions. In turn, you can download a specific version of a role by specifying one of the imported tags."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:218
+msgid "To see the available versions for a role:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:220
+msgid "Locate the role on the Galaxy search page."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:221
+msgid "Click on the name to view more details, including the available versions."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:223
+msgid "You can also navigate directly to the role using the /<namespace>/<role name>. For example, to view the role geerlingguy.apache, go to `<https://galaxy.ansible.com/geerlingguy/apache>`_."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:225
+msgid "To install a specific version of a role from Galaxy, append a comma and the value of a GitHub release tag. For example:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:231
+msgid "It is also possible to point directly to the git repository and specify a branch name or commit hash as the version. For example, the following will install a specific commit:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:239
+msgid "Installing multiple roles from a file"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:241
+msgid "You can install multiple roles by including the roles in a :file:`requirements.yml` file. The format of the file is YAML, and the file extension must be either *.yml* or *.yaml*."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:244
+msgid "Use the following command to install roles included in :file:`requirements.yml:`"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:250
+msgid "Again, the extension is important. If the *.yml* extension is left off, the ``ansible-galaxy`` CLI assumes the file is in an older, now deprecated, \"basic\" format."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:253
+msgid "Each role in the file will have one or more of the following attributes:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:256
+msgid "src"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:256
+msgid "The source of the role. Use the format *namespace.role_name*, if downloading from Galaxy; otherwise, provide a URL pointing to a repository within a git based SCM. See the examples below. This is a required attribute."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:258
+msgid "scm"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:259
+msgid "Specify the SCM. As of this writing only *git* or *hg* are allowed. See the examples below. Defaults to *git*."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:260
+msgid "version:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:261
+msgid "The version of the role to download. Provide a release tag value, commit hash, or branch name. Defaults to the branch set as a default in the repository, otherwise defaults to the *master*."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:264
+msgid "name:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:263
+msgid "Download the role to a specific name. Defaults to the Galaxy name when downloading from Galaxy, otherwise it defaults to the name of the repository."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:266
+msgid "Use the following example as a guide for specifying roles in *requirements.yml*:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:315
+msgid "Embedding credentials into a SCM URL is not secure. Make sure to use safe auth options for security reasons. For example, use `SSH <https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh>`_, `netrc <https://linux.die.net/man/5/netrc>`_ or `http.extraHeader <https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpextraHeader>`_/`url.<base>.pushInsteadOf <https://git-scm.com/docs/git-config#Documentation/git-config.txt-urlltbasegtpushInsteadOf>`_ in Git config to prevent your creds from being exposed in logs."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:318
+msgid "Installing roles and collections from the same requirements.yml file"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:320
+msgid "You can install roles and collections from the same requirements files, with some caveats."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:337
+msgid "While both roles and collections can be specified in one requirements file, they need to be installed separately. The ``ansible-galaxy role install -r requirements.yml`` will only install roles and  ``ansible-galaxy collection install -r requirements.yml -p ./`` will only install collections."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:341
+msgid "Installing multiple roles from multiple files"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:343
+msgid "For large projects, the ``include`` directive in a :file:`requirements.yml` file provides the ability to split a large file into multiple smaller files."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:345
+msgid "For example, a project may have a :file:`requirements.yml` file, and a :file:`webserver.yml` file."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:347
+msgid "Below are the contents of the :file:`webserver.yml` file:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:358
+msgid "The following shows the contents of the :file:`requirements.yml` file that now includes the :file:`webserver.yml` file:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:366
+msgid "To install all the roles from both files, pass the root file, in this case :file:`requirements.yml` on the command line, as follows:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:376
+msgid "Dependencies"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:378
+msgid "Roles can also be dependent on other roles, and when you install a role that has dependencies, those dependencies will automatically be installed to the ``roles_path``."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:380
+msgid "There are two ways to define the dependencies of a role:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:382
+msgid "using ``meta/requirements.yml``"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:383
+msgid "using ``meta/main.yml``"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:386
+msgid "Using ``meta/requirements.yml``"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:388
+msgid "`.. versionadded:: 2.10`"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:390
+msgid "You can create the file ``meta/requirements.yml`` and define dependencies in the same format used for :file:`requirements.yml` described in the `Installing multiple roles from a file`_ section."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:392
+msgid "From there, you can import or include the specified roles in your tasks."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:395
+msgid "Using ``meta/main.yml``"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:397
+msgid "Alternatively, you can specify role dependencies in the ``meta/main.yml`` file by providing a list of roles under the ``dependencies`` section. If the source of a role is Galaxy, you can simply specify the role in the format ``namespace.role_name``. You can also use the more complex format in :file:`requirements.yml`, allowing you to provide ``src``, ``scm``, ``version``, and ``name``."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:400
+msgid "Dependencies installed that way, depending on other factors described below, will also be executed **before** this role is executed during play execution. To better understand how dependencies are handled during play execution, see :ref:`playbooks_reuse_roles`."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:403
+msgid "The following shows an example ``meta/main.yml`` file with dependent roles:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:436
+msgid "Tags are inherited *down* the dependency chain. In order for tags to be applied to a role and all its dependencies, the tag should be applied to the role, not to all the tasks within a role."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:438
+msgid "Roles listed as dependencies are subject to conditionals and tag filtering, and may not execute fully depending on what tags and conditionals are applied."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:441
+msgid "If the source of a role is Galaxy, specify the role in the format *namespace.role_name*:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:450
+msgid "Alternately, you can specify the role dependencies in the complex form used in  :file:`requirements.yml` as follows:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:462
+msgid "Galaxy expects all role dependencies to exist in Galaxy, and therefore dependencies to be specified in the ``namespace.role_name`` format. If you import a role with a dependency where the ``src`` value is a URL, the import process will fail."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:466
+msgid "List installed roles"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:468
+msgid "Use ``list`` to show the name and version of each role installed in the *roles_path*."
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:480
+msgid "Remove an installed role"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:482
+msgid "Use ``remove`` to delete a role from *roles_path*:"
+msgstr ""
+
+#: ../../rst/galaxy/user_guide.rst:493
+msgid "Reusable tasks, handlers, and other files in a known directory structure"
+msgstr ""
+

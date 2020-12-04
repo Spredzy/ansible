@@ -1,0 +1,1019 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019 Red Hat, Inc.
+# This file is distributed under the same license as the Ansible package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ansible devel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-04 13:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../rst/plugins/action.rst:4
+msgid "Action Plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:10
+msgid "Action plugins act in conjunction with :ref:`modules <working_with_modules>` to execute the actions required by playbook tasks. They usually execute automatically in the background doing prerequisite work before modules execute."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:13
+msgid "The 'normal' action plugin is used for modules that do not already have an action plugin."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:18
+msgid "Enabling action plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:20
+msgid "You can enable a custom action plugin by either dropping it into the ``action_plugins`` directory adjacent to your play, inside a role, or by putting it in one of the action plugin directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:25
+msgid "Using action plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:27
+msgid "Action plugin are executed by default when an associated module is used; no action is required."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:30 ../../rst/plugins/callback.rst:77
+#: ../../rst/plugins/lookup.rst:136 ../../rst/plugins/strategy.rst:56
+msgid "Plugin list"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:32
+msgid "You cannot list action plugins directly, they show up as their counterpart modules:"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:34
+msgid "Use ``ansible-doc -l`` to see the list of available modules. Use ``ansible-doc <name>`` to see specific documentation and examples, this should note if the module has a corresponding action plugin."
+msgstr ""
+
+#: ../../rst/plugins/action.rst:39 ../../rst/plugins/callback.rst:86
+#: ../../rst/plugins/vars.rst:64
+msgid ":ref:`cache_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:40 ../../rst/plugins/vars.rst:65
+msgid "Ansible Cache plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:41 ../../rst/plugins/become.rst:56
+#: ../../rst/plugins/cache.rst:125 ../../rst/plugins/connection.rst:65
+#: ../../rst/plugins/inventory.rst:147 ../../rst/plugins/lookup.rst:147
+#: ../../rst/plugins/shell.rst:42 ../../rst/plugins/strategy.rst:68
+#: ../../rst/plugins/vars.rst:66
+msgid ":ref:`callback_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:42 ../../rst/plugins/become.rst:57
+#: ../../rst/plugins/cache.rst:126 ../../rst/plugins/connection.rst:66
+#: ../../rst/plugins/inventory.rst:148 ../../rst/plugins/lookup.rst:148
+#: ../../rst/plugins/shell.rst:43 ../../rst/plugins/strategy.rst:69
+#: ../../rst/plugins/vars.rst:67
+msgid "Ansible callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:43 ../../rst/plugins/cache.rst:127
+#: ../../rst/plugins/callback.rst:88 ../../rst/plugins/inventory.rst:149
+#: ../../rst/plugins/vars.rst:68
+msgid ":ref:`connection_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:44 ../../rst/plugins/cache.rst:128
+#: ../../rst/plugins/callback.rst:89 ../../rst/plugins/inventory.rst:150
+#: ../../rst/plugins/vars.rst:69
+msgid "Ansible connection plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:45 ../../rst/plugins/become.rst:54
+#: ../../rst/plugins/cache.rst:129 ../../rst/plugins/callback.rst:90
+#: ../../rst/plugins/lookup.rst:145 ../../rst/plugins/shell.rst:40
+#: ../../rst/plugins/strategy.rst:66 ../../rst/plugins/vars.rst:70
+msgid ":ref:`inventory_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:46 ../../rst/plugins/become.rst:55
+#: ../../rst/plugins/cache.rst:130 ../../rst/plugins/callback.rst:91
+#: ../../rst/plugins/lookup.rst:146 ../../rst/plugins/shell.rst:41
+#: ../../rst/plugins/strategy.rst:67 ../../rst/plugins/vars.rst:71
+msgid "Ansible inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:47 ../../rst/plugins/cache.rst:131
+#: ../../rst/plugins/callback.rst:92 ../../rst/plugins/vars.rst:72
+msgid ":ref:`shell_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:48 ../../rst/plugins/cache.rst:132
+#: ../../rst/plugins/callback.rst:93 ../../rst/plugins/vars.rst:73
+msgid "Ansible Shell plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:49 ../../rst/plugins/cache.rst:133
+#: ../../rst/plugins/callback.rst:94 ../../rst/plugins/vars.rst:74
+msgid ":ref:`strategy_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:50 ../../rst/plugins/cache.rst:134
+#: ../../rst/plugins/callback.rst:95 ../../rst/plugins/vars.rst:75
+msgid "Ansible Strategy plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:51 ../../rst/plugins/cache.rst:135
+#: ../../rst/plugins/callback.rst:96 ../../rst/plugins/connection.rst:73
+#: ../../rst/plugins/inventory.rst:157
+msgid ":ref:`vars_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:52 ../../rst/plugins/cache.rst:136
+#: ../../rst/plugins/callback.rst:97
+msgid "Ansible Vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:53 ../../rst/plugins/become.rst:64
+#: ../../rst/plugins/cliconf.rst:44 ../../rst/plugins/connection.rst:75
+#: ../../rst/plugins/httpapi.rst:69 ../../rst/plugins/inventory.rst:159
+#: ../../rst/plugins/lookup.rst:155 ../../rst/plugins/netconf.rst:44
+#: ../../rst/plugins/plugins.rst:41 ../../rst/plugins/shell.rst:50
+#: ../../rst/plugins/strategy.rst:76 ../../rst/plugins/vars.rst:76
+msgid "`User Mailing List <https://groups.google.com/group/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:54 ../../rst/plugins/become.rst:65
+#: ../../rst/plugins/cache.rst:138 ../../rst/plugins/callback.rst:99
+#: ../../rst/plugins/cliconf.rst:45 ../../rst/plugins/connection.rst:76
+#: ../../rst/plugins/httpapi.rst:70 ../../rst/plugins/inventory.rst:160
+#: ../../rst/plugins/lookup.rst:156 ../../rst/plugins/netconf.rst:45
+#: ../../rst/plugins/plugins.rst:42 ../../rst/plugins/shell.rst:51
+#: ../../rst/plugins/strategy.rst:77 ../../rst/plugins/vars.rst:77
+msgid "Have a question?  Stop by the google group!"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:55 ../../rst/plugins/become.rst:66
+#: ../../rst/plugins/cliconf.rst:46 ../../rst/plugins/connection.rst:77
+#: ../../rst/plugins/httpapi.rst:71 ../../rst/plugins/inventory.rst:161
+#: ../../rst/plugins/lookup.rst:157 ../../rst/plugins/netconf.rst:46
+#: ../../rst/plugins/plugins.rst:43 ../../rst/plugins/shell.rst:52
+#: ../../rst/plugins/strategy.rst:78 ../../rst/plugins/vars.rst:78
+msgid "`irc.freenode.net <http://irc.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/action.rst:56 ../../rst/plugins/become.rst:67
+#: ../../rst/plugins/cache.rst:140 ../../rst/plugins/callback.rst:101
+#: ../../rst/plugins/connection.rst:78 ../../rst/plugins/inventory.rst:162
+#: ../../rst/plugins/lookup.rst:158 ../../rst/plugins/plugins.rst:44
+#: ../../rst/plugins/shell.rst:53 ../../rst/plugins/strategy.rst:79
+#: ../../rst/plugins/vars.rst:79
+msgid "#ansible IRC chat channel"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:4
+msgid "Become Plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:12
+msgid "Become plugins work to ensure that Ansible can use certain privilege escalation systems when running the basic commands to work with the target machine as well as the modules required to execute the tasks specified in the play."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:16
+msgid "These utilities (``sudo``, ``su``, ``doas``, and so on) generally let you 'become' another user to execute a command with the permissions of that user."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:23
+msgid "Enabling Become Plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:25
+msgid "The become plugins shipped with Ansible are already enabled. Custom plugins can be added by placing them into a ``become_plugins`` directory adjacent to your play, inside a role, or by placing them in one of the become plugin directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:33
+msgid "Using Become Plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:35
+msgid "In addition to the default configuration settings in :ref:`ansible_configuration_settings` or the ``--become-method`` command line option, you can use the ``become_method`` keyword in a play or, if you need to be 'host specific', the connection variable ``ansible_become_method`` to select the plugin to use."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:39 ../../rst/plugins/shell.rst:33
+msgid "You can further control the settings for each plugin via other configuration options detailed in the plugin themselves (linked below)."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:45 ../../rst/plugins/cache.rst:116
+#: ../../rst/plugins/connection.rst:55 ../../rst/plugins/inventory.rst:138
+msgid "Plugin List"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:47
+msgid "You can use ``ansible-doc -t become -l`` to see the list of available plugins. Use ``ansible-doc -t become <plugin name>`` to see specific documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/become.rst:52 ../../rst/plugins/inventory.rst:145
+#: ../../rst/plugins/lookup.rst:143 ../../rst/plugins/plugins.rst:35
+#: ../../rst/plugins/shell.rst:38 ../../rst/plugins/strategy.rst:64
+msgid ":ref:`about_playbooks`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:53 ../../rst/plugins/connection.rst:64
+#: ../../rst/plugins/inventory.rst:146 ../../rst/plugins/lookup.rst:144
+#: ../../rst/plugins/plugins.rst:36 ../../rst/plugins/shell.rst:39
+#: ../../rst/plugins/strategy.rst:65
+msgid "An introduction to playbooks"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:58 ../../rst/plugins/inventory.rst:151
+#: ../../rst/plugins/lookup.rst:149 ../../rst/plugins/shell.rst:44
+#: ../../rst/plugins/strategy.rst:70
+msgid ":ref:`playbooks_filters`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:59 ../../rst/plugins/connection.rst:68
+#: ../../rst/plugins/inventory.rst:152 ../../rst/plugins/lookup.rst:150
+#: ../../rst/plugins/shell.rst:45 ../../rst/plugins/strategy.rst:71
+msgid "Jinja2 filter plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:60 ../../rst/plugins/inventory.rst:153
+#: ../../rst/plugins/lookup.rst:151 ../../rst/plugins/shell.rst:46
+#: ../../rst/plugins/strategy.rst:72
+msgid ":ref:`playbooks_tests`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:61 ../../rst/plugins/connection.rst:70
+#: ../../rst/plugins/inventory.rst:154 ../../rst/plugins/lookup.rst:152
+#: ../../rst/plugins/shell.rst:47 ../../rst/plugins/strategy.rst:73
+msgid "Jinja2 test plugins"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:62 ../../rst/plugins/inventory.rst:155
+#: ../../rst/plugins/lookup.rst:153 ../../rst/plugins/shell.rst:48
+#: ../../rst/plugins/strategy.rst:74
+msgid ":ref:`playbooks_lookups`"
+msgstr ""
+
+#: ../../rst/plugins/become.rst:63 ../../rst/plugins/connection.rst:72
+#: ../../rst/plugins/inventory.rst:156 ../../rst/plugins/lookup.rst:154
+#: ../../rst/plugins/shell.rst:49 ../../rst/plugins/strategy.rst:75
+msgid "Jinja2 lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:4
+msgid "Cache Plugins"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:10
+msgid "Cache plugins allow Ansible to store gathered facts or inventory source data without the performance hit of retrieving them from source."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:12
+msgid "The default cache plugin is the :ref:`memory <memory_cache>` plugin, which only caches the data for the current execution of Ansible. Other plugins with persistent storage are available to allow caching the data across runs. Some of these cache plugins write to files, others write to databases."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:14
+msgid "You can use different cache plugins for inventory and facts. If you enable inventory caching without setting an inventory-specific cache plugin, Ansible uses the fact cache plugin for both facts and inventory."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:19
+msgid "Enabling Fact Cache Plugins"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:21
+msgid "Fact caching is always enabled. However, only one fact cache plugin can be active at a time. You can select the cache plugin to use for fact caching in the Ansible configuration, either with an environment variable:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:27 ../../rst/plugins/cache.rst:55
+msgid "or in the ``ansible.cfg`` file:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:34
+msgid "If the cache plugin is in a collection use the fully qualified name:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:41
+msgid "To enable a custom cache plugin, save it in a ``cache_plugins`` directory adjacent to your play, inside a role, or in one of the directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:43
+msgid "You also need to configure other settings specific to each plugin. Consult the individual plugin documentation or the Ansible :ref:`configuration <ansible_configuration_settings>` for more details."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:47
+msgid "Enabling Inventory Cache Plugins"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:49
+msgid "Inventory caching is disabled by default. To cache inventory data, you must enable inventory caching and then select the specific cache plugin you want to use. Not all inventory plugins support caching, so check the documentation for the inventory plugin(s) you want to use. You can enable inventory caching with an environment variable:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:62 ../../rst/plugins/cache.rst:83
+msgid "or if the inventory plugin accepts a YAML configuration source, in the configuration file:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:70
+msgid "Only one inventory cache plugin can be active at a time. You can set it with an environment variable:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:76
+msgid "or in the ansible.cfg file:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:91
+msgid "To cache inventory with a custom plugin in your plugin path, follow the :ref:`developer guide on cache plugins<developing_cache_plugins>`."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:93
+msgid "To cache inventory with a cache plugin in a collection, use the FQCN:"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:100
+msgid "If you enable caching for inventory plugins without selecting an inventory-specific cache plugin, Ansible falls back to caching inventory with the fact cache plugin you configured. Consult the individual inventory plugin documentation or the Ansible :ref:`configuration <ansible_configuration_settings>` for more details."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:108
+msgid "Using Cache Plugins"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:110
+msgid "Cache plugins are used automatically once they are enabled."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:118
+msgid "You can use ``ansible-doc -t cache -l`` to see the list of available plugins. Use ``ansible-doc -t cache <plugin name>`` to see specific documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:123 ../../rst/plugins/callback.rst:84
+#: ../../rst/plugins/vars.rst:62
+msgid ":ref:`action_plugins`"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:124 ../../rst/plugins/callback.rst:85
+#: ../../rst/plugins/vars.rst:63
+msgid "Ansible Action plugins"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:137 ../../rst/plugins/callback.rst:98
+msgid "`User Mailing List <https://groups.google.com/forum/#!forum/ansible-devel>`_"
+msgstr ""
+
+#: ../../rst/plugins/cache.rst:139 ../../rst/plugins/callback.rst:100
+msgid "`webchat.freenode.net <https://webchat.freenode.net>`_"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:4
+msgid "Callback Plugins"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:10
+msgid "Callback plugins enable adding new behaviors to Ansible when responding to events. By default, callback plugins control most of the output you see when running the command line programs, but can also be used to add additional output, integrate with other tools and marshall the events to a storage backend."
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:17
+msgid "Example callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:19
+msgid "The :ref:`log_plays <log_plays_callback>` callback is an example of how to record playbook events to a log file, and the :ref:`mail <mail_callback>` callback sends email on playbook failures."
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:22
+msgid "The :ref:`say <say_callback>` callback responds with computer synthesized speech in relation to playbook events."
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:27
+msgid "Enabling callback plugins"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:29
+msgid "You can activate a custom callback by either dropping it into a ``callback_plugins`` directory adjacent to your play,  inside a role, or by putting it in one of the callback directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:31
+msgid "Plugins are loaded in alphanumeric order. For example, a plugin implemented in a file named `1_first.py` would run before a plugin file named `2_second.py`."
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:33
+msgid "Most callbacks shipped with Ansible are disabled by default and need to be whitelisted in your :ref:`ansible.cfg <ansible_configuration_settings>` file in order to function. For example:"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:40
+msgid "Setting a callback plugin for ``ansible-playbook``"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:42
+msgid "You can only have one plugin be the main manager of your console output. If you want to replace the default, you should define CALLBACK_TYPE = stdout in the subclass and then configure the stdout plugin in :ref:`ansible.cfg <ansible_configuration_settings>`. For example:"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:48
+msgid "or for my custom callback:"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:54
+msgid "This only affects :ref:`ansible-playbook` by default."
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:57
+msgid "Setting a callback plugin for ad-hoc commands"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:59
+msgid "The :ref:`ansible` ad hoc command specifically uses a different callback plugin for stdout, so there is an extra setting in :ref:`ansible_configuration_settings` you need to add to use the stdout callback defined above:"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:67
+msgid "You can also set this as an environment variable:"
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:79
+msgid "You can use ``ansible-doc -t callback -l`` to see the list of available plugins. Use ``ansible-doc -t callback <plugin name>`` to see specific documents and examples."
+msgstr ""
+
+#: ../../rst/plugins/callback.rst:87
+msgid "Ansible cache plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:4
+msgid "Cliconf Plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:10
+msgid "Cliconf plugins are abstractions over the CLI interface to network devices. They provide a standard interface for Ansible to execute tasks on those network devices."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:12
+msgid "These plugins generally correspond one-to-one to network device platforms. Ansible loads the appropriate cliconf plugin automatically based on the ``ansible_network_os`` variable."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:17
+msgid "Adding cliconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:19
+msgid "You can extend Ansible to support other network devices by dropping a custom plugin into the ``cliconf_plugins`` directory."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:24
+msgid "Using cliconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:26
+msgid "The cliconf plugin to use is determined automatically from the ``ansible_network_os`` variable. There should be no reason to override this functionality."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:28
+msgid "Most cliconf plugins can operate without configuration. A few have additional options that can be set to affect how tasks are translated into CLI commands."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:30 ../../rst/plugins/httpapi.rst:32
+#: ../../rst/plugins/netconf.rst:30
+msgid "Plugins are self-documenting. Each plugin should document its configuration options."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:35
+msgid "Viewing cliconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:37
+msgid "These plugins have migrated to collections on `Ansible Galaxy <https://galaxy.ansible.com>`_. If you installed Ansible version 2.10 or later using ``pip``, you have access to several cliconf plugins. To list all available cliconf plugins on your control node, type ``ansible-doc -t cliconf -l``. To view plugin-specific documentation and examples, use ``ansible-doc -t cliconf``."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:42 ../../rst/plugins/httpapi.rst:65
+#: ../../rst/plugins/netconf.rst:42
+msgid ":ref:`Ansible for Network Automation<network_guide>`"
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:43 ../../rst/plugins/httpapi.rst:66
+#: ../../rst/plugins/netconf.rst:43
+msgid "An overview of using Ansible to automate networking devices."
+msgstr ""
+
+#: ../../rst/plugins/cliconf.rst:47 ../../rst/plugins/httpapi.rst:72
+#: ../../rst/plugins/netconf.rst:47
+msgid "#ansible-network IRC chat channel"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:4
+msgid "Connection Plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:10
+msgid "Connection plugins allow Ansible to connect to the target hosts so it can execute tasks on them. Ansible ships with many connection plugins, but only one can be used per host at a time."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:12
+msgid "By default, Ansible ships with several plugins. The most commonly used are the :ref:`paramiko SSH<paramiko_ssh_connection>`, native ssh (just called :ref:`ssh<ssh_connection>`), and :ref:`local<local_connection>` connection types.  All of these can be used in playbooks and with :command:`/usr/bin/ansible` to decide how you want to talk to remote machines."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:14
+msgid "The basics of these connection types are covered in the :ref:`getting started<intro_getting_started>` section."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:19
+msgid "``ssh`` plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:21
+msgid "Because ssh is the default protocol used in system administration and the protocol most used in Ansible, ssh options are included in the command line tools. See :ref:`ansible-playbook` for more details."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:26
+msgid "Adding connection plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:28
+msgid "You can extend Ansible to support other transports (such as SNMP or message bus) by dropping a custom plugin into the ``connection_plugins`` directory."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:34
+msgid "Using connection plugins"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:36
+msgid "You can set the connection plugin globally via :ref:`configuration<ansible_configuration_settings>`, at the command line (``-c``, ``--connection``), as a :ref:`keyword <playbook_keywords>` in your play, or by setting a :ref:`variable<behavioral_parameters>`, most often in your inventory. For example, for Windows machines you might want to set the :ref:`winrm <winrm_connection>` plugin as an inventory variable."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:39
+msgid "Most connection plugins can operate with minimal configuration. By default they use the :ref:`inventory hostname<inventory_hostnames_lookup>` and defaults to find the target host."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:41
+msgid "Plugins are self-documenting. Each plugin should document its configuration options. The following are connection variables common to most connection plugins:"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:43
+msgid ":ref:`ansible_host<magic_variables_and_hostvars>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:44
+msgid "The name of the host to connect to, if different from the :ref:`inventory <intro_inventory>` hostname."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:45
+msgid ":ref:`ansible_port<faq_setting_users_and_ports>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:46
+msgid "The ssh port number, for :ref:`ssh <ssh_connection>` and :ref:`paramiko_ssh <paramiko_ssh_connection>` it defaults to 22."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:48
+msgid ":ref:`ansible_user<faq_setting_users_and_ports>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:48
+msgid "The default user name to use for log in. Most plugins default to the 'current user running Ansible'."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:50
+msgid "Each plugin might also have a specific version of a variable that overrides the general version. For example, ``ansible_ssh_host`` for the :ref:`ssh <ssh_connection>` plugin."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:57
+msgid "You can use ``ansible-doc -t connection -l`` to see the list of available plugins. Use ``ansible-doc -t connection <plugin name>`` to see detailed documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:63
+msgid ":ref:`Working with Playbooks<working_with_playbooks>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:67
+msgid ":ref:`Filters<playbooks_filters>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:69
+msgid ":ref:`Tests<playbooks_tests>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:71
+msgid ":ref:`Lookups<playbooks_lookups>`"
+msgstr ""
+
+#: ../../rst/plugins/connection.rst:74 ../../rst/plugins/inventory.rst:158
+msgid "Ansible vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:4
+msgid "Httpapi Plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:10
+msgid "Httpapi plugins tell Ansible how to interact with a remote device's HTTP-based API and execute tasks on the device."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:13
+msgid "Each plugin represents a particular dialect of API. Some are platform-specific (Arista eAPI, Cisco NXAPI), while others might be usable on a variety of platforms (RESTCONF). Ansible loads the appropriate httpapi plugin automatically based on the ``ansible_network_os`` variable."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:19
+msgid "Adding httpapi plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:21
+msgid "You can extend Ansible to support other APIs by dropping a custom plugin into the ``httpapi_plugins`` directory. See :ref:`developing_plugins_httpapi` for details."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:26
+msgid "Using httpapi plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:28
+msgid "The httpapi plugin to use is determined automatically from the ``ansible_network_os`` variable."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:30
+msgid "Most httpapi plugins can operate without configuration. Additional options may be defined by each plugin."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:35
+msgid "The following sample playbook shows the httpapi plugin for an Arista network device, assuming an inventory variable set as ``ansible_network_os=eos`` for the httpapi plugin to trigger off:"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:54
+msgid "See the full working example `on GitHub <https://github.com/network-automation/httpapi>`_."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:59
+msgid "Viewing httpapi plugins"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:61
+msgid "These plugins have migrated to collections on `Ansible Galaxy <https://galaxy.ansible.com>`_. If you installed Ansible version 2.10 or later using ``pip``, you have access to several httpapi plugins. To list all available httpapi plugins on your control node, type ``ansible-doc -t httpapi -l``. To view plugin-specific documentation and examples, use ``ansible-doc -t httpapi``."
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:67
+msgid ":ref:`Developing network modules<developing_modules_network>`"
+msgstr ""
+
+#: ../../rst/plugins/httpapi.rst:68
+msgid "How to develop network modules."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:4
+msgid "Inventory Plugins"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:10
+msgid "Inventory plugins allow users to point at data sources to compile the inventory of hosts that Ansible uses to target tasks, either using the ``-i /path/to/file`` and/or ``-i 'host1, host2'`` command line parameters or from other configuration sources."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:16
+msgid "Enabling inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:18
+msgid "Most inventory plugins shipped with Ansible are enabled by default or can be used by with the ``auto`` plugin."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:20
+msgid "In some circumstances, for example, if the inventory plugin does not use a YAML configuration file, you may need to enable the specific plugin. You can do this by setting ``enable_plugins`` in your :ref:`ansible.cfg <ansible_configuration_settings>` file in the ``[inventory]`` section. Modifying this will override the default list of enabled plugins. Here is the default list of enabled plugins that ships with Ansible:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:27
+msgid "If the plugin is in a collection, use the fully qualified name:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:38
+msgid "Using inventory plugins"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:40
+msgid "To use an inventory plugin, you must provide an inventory source. Most of the time this is a file containing host information or a YAML configuration file with options for the plugin. You can use the ``-i`` flag to provide inventory sources or configure a default inventory path."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:46
+msgid "To start using an inventory plugin with a YAML configuration source, create a file with the accepted filename schema documented for the plugin in question, then add ``plugin: plugin_name``. Use the fully qualified name if the plugin is in a collection."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:53
+msgid "Each plugin should document any naming restrictions. In addition, the YAML config file must end with the extension ``yml`` or ``yaml`` to be enabled by default with the ``auto`` plugin (otherwise, see the section above on enabling plugins)."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:55
+msgid "After providing any required options, you can view the populated inventory with ``ansible-inventory -i demo.aws_ec2.yml --graph``:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:65
+msgid "If you are using an inventory plugin in a playbook-adjacent collection and want to test your setup with ``ansible-inventory``, use the ``--playbook-dir`` flag."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:67
+msgid "Your inventory source might be a directory of inventory configuration files. The constructed inventory plugin only operates on those hosts already in inventory, so you may want the constructed inventory configuration parsed at a particular point (such as last). Ansible parses the directory recursively, alphabetically. You cannot configure the parsing approach, so name your files to make it work predictably. Inventory plugins that extend constructed features directly can work around that restriction by adding constructed options in addition to the inventory plugin options. Otherwise, you can use ``-i`` with multiple sources to impose a specific order, for example ``-i demo.aws_ec2.yml -i clouds.yml -i constructed.yml``."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:69
+msgid "You can create dynamic groups using host variables with the constructed ``keyed_groups`` option. The option ``groups`` can also be used to create groups and ``compose`` creates and modifies host variables. Here is an aws_ec2 example utilizing constructed features:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:90
+msgid "Now the output of ``ansible-inventory -i demo.aws_ec2.yml --graph``:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:108
+msgid "If a host does not have the variables in the configuration above (in other words, ``tags.Name``, ``tags``, ``private_ip_address``), the host will not be added to groups other than those that the inventory plugin creates and the ``ansible_host`` host variable will not be modified."
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:110
+msgid "Inventory plugins that support caching can use the general settings for the fact cache defined in the ``ansible.cfg`` file's ``[defaults]`` section or define inventory-specific settings in the ``[inventory]`` section. Individual plugins can define plugin-specific cache settings in their config file:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:122
+msgid "Here is an example of setting inventory caching with some fact caching defaults for the cache plugin used and the timeout in an ``ansible.cfg`` file:"
+msgstr ""
+
+#: ../../rst/plugins/inventory.rst:140
+msgid "You can use ``ansible-doc -t inventory -l`` to see the list of available plugins. Use ``ansible-doc -t inventory <plugin name>`` to see plugin-specific documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:4
+msgid "Lookup Plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:10
+msgid "Lookup plugins are an Ansible-specific extension to the Jinja2 templating language. You can use lookup plugins to access data from outside sources (files, databases, key/value stores, APIs, and other services) within your playbooks. Like all :ref:`templating <playbooks_templating>`, lookups execute and are evaluated on the Ansible control machine. Ansible makes the data returned by a lookup plugin available using the standard templating system. You can use lookup plugins to load variables or templates with information from external sources."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:13
+msgid "Lookups are executed with a working directory relative to the role or play, as opposed to local tasks, which are executed relative the executed script."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:15
+msgid "Pass ``wantlist=True`` to lookups to use in Jinja2 template \"for\" loops."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:18
+msgid "Some lookups pass arguments to a shell. When using variables from a remote/untrusted source, use the `|quote` filter to ensure safe usage."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:24
+msgid "Enabling lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:26
+msgid "Ansible enables all lookup plugins it can find. You can activate a custom lookup by either dropping it into a ``lookup_plugins`` directory adjacent to your play, inside the ``plugins/lookup/`` directory of a collection you have installed, inside a standalone role, or in one of the lookup directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:32
+msgid "Using lookup plugins"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:34
+msgid "You can use lookup plugins anywhere you can use templating in Ansible: in a play, in variables file, or in a Jinja2 template for the :ref:`template <template_module>` module."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:41
+msgid "Lookups are an integral part of loops. Wherever you see ``with_``, the part after the underscore is the name of a lookup. For this reason, most lookups output lists and take lists as input; for example, ``with_items`` uses the :ref:`items <items_lookup>` lookup::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:48
+msgid "You can combine lookups with :ref:`filters <playbooks_filters>`, :ref:`tests <playbooks_tests>` and even each other to do some complex data generation and manipulation. For example::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:60
+msgid "You can control how errors behave in all lookup plugins by setting ``errors`` to ``ignore``, ``warn``, or ``strict``. The default setting is ``strict``, which causes the task to fail if the lookup returns an error. For example:"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:62
+msgid "To ignore lookup errors::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:76
+msgid "To get a warning instead of a failure::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:92
+msgid "To get a fatal error (the default)::"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:107
+msgid "Forcing lookups to return lists: ``query`` and ``wantlist=True``"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:111
+msgid "In Ansible 2.5, a new Jinja2 function called ``query`` was added for invoking lookup plugins. The difference between ``lookup`` and ``query`` is largely that ``query`` will always return a list. The default behavior of ``lookup`` is to return a string of comma separated values. ``lookup`` can be explicitly configured to return a list using ``wantlist=True``."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:114
+msgid "This feature provides an easier and more consistent interface for interacting with the new ``loop`` keyword, while maintaining backwards compatibility with other uses of ``lookup``."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:116
+msgid "The following examples are equivalent:"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:124
+msgid "As demonstrated above, the behavior of ``wantlist=True`` is implicit when using ``query``."
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:126
+msgid "Additionally, ``q`` was introduced as a shortform of ``query``:"
+msgstr ""
+
+#: ../../rst/plugins/lookup.rst:138
+msgid "You can use ``ansible-doc -t lookup -l`` to see the list of available plugins. Use ``ansible-doc -t lookup <plugin name>`` to see specific documents and examples."
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:4
+msgid "Netconf Plugins"
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:10
+msgid "Netconf plugins are abstractions over the Netconf interface to network devices. They provide a standard interface for Ansible to execute tasks on those network devices."
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:12
+msgid "These plugins generally correspond one-to-one to network device platforms. Ansible loads the appropriate netconf plugin automatically based on the ``ansible_network_os`` variable. If the platform supports standard Netconf implementation as defined in the Netconf RFC specification, Ansible loads the ``default`` netconf plugin. If the platform supports propriety Netconf RPCs, Ansible loads the platform-specific netconf plugin."
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:17
+msgid "Adding netconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:19
+msgid "You can extend Ansible to support other network devices by dropping a custom plugin into the ``netconf_plugins`` directory."
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:24
+msgid "Using netconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:26
+msgid "The netconf plugin to use is determined automatically from the ``ansible_network_os`` variable. There should be no reason to override this functionality."
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:28
+msgid "Most netconf plugins can operate without configuration. A few have additional options that can be set to affect how tasks are translated into netconf commands. A ncclient device specific handler name can be set in the netconf plugin or else the value of ``default`` is used as per ncclient device handler."
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:35
+msgid "Listing netconf plugins"
+msgstr ""
+
+#: ../../rst/plugins/netconf.rst:37
+msgid "These plugins have migrated to collections on `Ansible Galaxy <https://galaxy.ansible.com>`_. If you installed Ansible version 2.10 or later using ``pip``, you have access to several netconf plugins. To list all available netconf plugins on your control node, type ``ansible-doc -t netconf -l``. To view plugin-specific documentation and examples, use ``ansible-doc -t netconf``."
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:5
+msgid "Working With Plugins"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:7
+msgid "Plugins are pieces of code that augment Ansible's core functionality. Ansible uses a plugin architecture to enable a rich, flexible and expandable feature set."
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:9
+msgid "Ansible ships with a number of handy plugins, and you can easily write your own."
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:11
+msgid "This section covers the various types of plugins that are included with Ansible:"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:37
+msgid ":ref:`ansible_configuration_settings`"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:38
+msgid "Ansible configuration documentation and settings"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:39
+msgid ":ref:`command_line_tools`"
+msgstr ""
+
+#: ../../rst/plugins/plugins.rst:40
+msgid "Ansible tools, description and options"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:4
+msgid "Shell Plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:10
+msgid "Shell plugins work to ensure that the basic commands Ansible runs are properly formatted to work with the target machine and allow the user to configure certain behaviors related to how Ansible executes tasks."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:16
+msgid "Enabling shell plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:18
+msgid "You can add a custom shell plugin by dropping it into a ``shell_plugins`` directory adjacent to your play, inside a role, or by putting it in one of the shell plugin directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:21
+msgid "You should not alter which plugin is used unless you have a setup in which the default ``/bin/sh`` is not a POSIX compatible shell or is not available for execution."
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:27
+msgid "Using shell plugins"
+msgstr ""
+
+#: ../../rst/plugins/shell.rst:29
+msgid "In addition to the default configuration settings in :ref:`ansible_configuration_settings`, you can use the connection variable :ref:`ansible_shell_type <ansible_shell_type>` to select the plugin to use. In this case, you will also want to update the :ref:`ansible_shell_executable <ansible_shell_executable>` to match."
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:4
+msgid "Strategy Plugins"
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:10
+msgid "Strategy plugins control the flow of play execution by handling task and host scheduling."
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:15
+msgid "Enabling strategy plugins"
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:17
+msgid "All strategy plugins shipped with Ansible are enabled by default. You can enable a custom strategy plugin by putting it in one of the lookup directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:23
+msgid "Using strategy plugins"
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:25
+msgid "Only one strategy plugin can be used in a play, but you can use different ones for each play in a playbook or ansible run. The default is the :ref:`linear <linear_strategy>` plugin. You can change this default in Ansible :ref:`configuration <ansible_configuration_settings>` using an environment variable:"
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:32
+msgid "or in the `ansible.cfg` file:"
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:39
+msgid "You can also specify the strategy plugin in the play via the :ref:`strategy keyword <playbook_keywords>` in a play::"
+msgstr ""
+
+#: ../../rst/plugins/strategy.rst:58
+msgid "You can use ``ansible-doc -t strategy -l`` to see the list of available plugins. Use ``ansible-doc -t strategy <plugin name>`` to see plugin-specific specific documentation and examples."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:4
+msgid "Vars Plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:10
+msgid "Vars plugins inject additional variable data into Ansible runs that did not come from an inventory source, playbook, or command line. Playbook constructs like 'host_vars' and 'group_vars' work using vars plugins."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:12
+msgid "Vars plugins were partially implemented in Ansible 2.0 and rewritten to be fully implemented starting with Ansible 2.4."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:14
+msgid "The :ref:`host_group_vars <host_group_vars_vars>` plugin shipped with Ansible enables reading variables from :ref:`host_variables` and :ref:`group_variables`."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:20
+msgid "Enabling vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:22
+msgid "You can activate a custom vars plugin by either dropping it into a ``vars_plugins`` directory adjacent to your play, inside a role, or by putting it in one of the directory sources configured in :ref:`ansible.cfg <ansible_configuration_settings>`."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:24
+msgid "Starting in Ansible 2.10, vars plugins can require whitelisting rather than running by default. To enable a plugin that requires whitelisting set ``vars_plugins_enabled`` in the ``defaults`` section of :ref:`ansible.cfg <ansible_configuration_settings>` or set the ``ANSIBLE_VARS_ENABLED`` environment variable to the list of vars plugins you want to execute. By default, the :ref:`host_group_vars <host_group_vars_vars>` plugin shipped with Ansible is whitelisted."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:26
+msgid "Starting in Ansible 2.10, you can use vars plugins in collections. All vars plugins in collections require whitelisting and need to use the fully qualified collection name in the format ``namespace.collection_name.vars_plugin_name``."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:36
+msgid "Using vars plugins"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:38
+msgid "By default, vars plugins are used on demand automatically after they are enabled."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:40
+msgid "Starting in Ansible 2.10, vars plugins can be made to run at specific times. `ansible-inventory` does not use these settings, and always loads vars plugins."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:42
+msgid "The global setting ``RUN_VARS_PLUGINS`` can be set in ``ansible.cfg`` using ``run_vars_plugins`` in the ``defaults`` section or by the ``ANSIBLE_RUN_VARS_PLUGINS`` environment variable. The default option, ``demand``, runs any enabled vars plugins relative to inventory sources whenever variables are demanded by tasks. You can use the option ``start`` to run any enabled vars plugins relative to inventory sources after importing that inventory source instead."
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:44
+msgid "You can also control vars plugin execution on a per-plugin basis for vars plugins that support the ``stage`` option. To run the :ref:`host_group_vars <host_group_vars_vars>` plugin after importing inventory you can add the following to :ref:`ansible.cfg <ansible_configuration_settings>`:"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:54
+msgid "Plugin Lists"
+msgstr ""
+
+#: ../../rst/plugins/vars.rst:56
+msgid "You can use ``ansible-doc -t vars -l`` to see the list of available plugins. Use ``ansible-doc -t vars <plugin name>`` to see specific plugin-specific documentation and examples."
+msgstr ""
+
