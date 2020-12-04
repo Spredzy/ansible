@@ -53,6 +53,9 @@ docs: htmldocs
 generate_rst: collections_meta config cli keywords plugins testing
 base_generate_rst: collections_meta config cli keywords base_plugins testing
 
+gettext: generate_rst
+	CPUS=$(CPUS) $(MAKE) -f Makefile.sphinx gettext
+
 htmldocs: generate_rst
 	CPUS=$(CPUS) $(MAKE) -f Makefile.sphinx html
 
