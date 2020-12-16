@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the Ansible package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Ansible devel\n"
@@ -19,77 +18,77 @@ msgstr ""
 
 #: ../../rst/api/index.rst:5
 msgid "Ansible API Documentation"
-msgstr ""
+msgstr "『`Ansible ドキュメント`_』"
 
 #: ../../rst/api/index.rst:7
 msgid "The Ansible API is under construction. These stub references for attributes, classes, functions, methods, and modules will be documented in future. The :ref:`module utilities <ansible.module_utils>` included in ``ansible.module_utils.basic`` and ``AnsibleModule`` are documented under Reference & Appendices."
-msgstr ""
+msgstr "AnsibleAPIは現在作成中です。属性、クラス、関数、メソッド、およびモジュールのこれらのスタブ参照は、将来文書化される予定です。 `` ansible.module_utils.basic``と `` AnsibleModule``に含まれる：ref： `モジュールユーティリティ<ansible.module_utils>`は、リファレンスと付録に記載されています。"
 
 #: ../../rst/api/index.rst:14
 msgid "Attributes"
-msgstr ""
+msgstr "属性"
 
 #: ../../rst/api/index.rst:18
 msgid "The parameters accepted by the module."
-msgstr ""
+msgstr "モジュールによって受け入れられるパラメーター。"
 
 #: ../../rst/api/index.rst:24
 msgid "Deprecated in favor of ansibleModule._selinux_special_fs."
-msgstr ""
+msgstr "ansibleModule._selinux_special_fsを優先して非推奨になりました。"
 
 #: ../../rst/api/index.rst:36
 msgid "(formerly ansible.module_utils.basic.SELINUX_SPECIAL_FS)"
-msgstr ""
+msgstr "(formerly ansible.module_utils.basic.SELINUX_SPECIAL_FS)"
 
 #: ../../rst/api/index.rst:50
 msgid "Classes"
-msgstr ""
+msgstr "クラス"
 
 #: ../../rst/api/index.rst:55
 msgid "The basic utilities for AnsibleModule."
-msgstr ""
+msgstr "AnsibleModuleの基本的なユーティリティ。"
 
 #: ../../rst/api/index.rst:59
 msgid "The main class for an Ansible module."
-msgstr ""
+msgstr "Ansibleモジュールのメインクラス。"
 
 #: ../../rst/api/index.rst:63
 msgid "Functions"
-msgstr ""
+msgstr "関数"
 
 #: ../../rst/api/index.rst:67
 msgid "Load parameters."
-msgstr ""
+msgstr "パラメーター"
 
 #: ../../rst/api/index.rst:71
 msgid "Methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../rst/api/index.rst:75
 msgid "Logs the output of Ansible."
-msgstr ""
+msgstr "Ansibleの出力をログに記録します。"
 
 #: ../../rst/api/index.rst:79
 msgid "Debugs Ansible."
-msgstr ""
+msgstr "Ansibleをデバッグします。"
 
 #: ../../rst/api/index.rst:83
 msgid "Retrieves the path for executables."
-msgstr ""
+msgstr "実行可能ファイルのパスを取得します。"
 
 #: ../../rst/api/index.rst:87
 msgid "Runs a command within an Ansible module."
-msgstr ""
+msgstr "Ansibleモジュール内でコマンドを実行します。"
 
 #: ../../rst/api/index.rst:91
 msgid "Exits and returns a failure."
-msgstr ""
+msgstr "終了して失敗を返します。"
 
 #: ../../rst/api/index.rst:95
 msgid "Exits and returns output."
-msgstr ""
+msgstr "終了して出力を返します。"
 
 #: ../../rst/api/index.rst:99
 msgid "Modules"
-msgstr ""
+msgstr "モジュール"
 
